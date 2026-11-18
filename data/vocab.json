@@ -1,0 +1,3422 @@
+[
+{
+"id": "w001",
+"ru": "Привет",
+"st": "Приве́т",
+"en": "hi",
+"lvl": "A1",
+"topic": "greet",
+"pic": "1F44B",
+"emoji": "👋"
+},
+{
+"id": "w002",
+"ru": "Здравствуйте",
+"st": "Здра́вствуйте",
+"en": "hello (formal)",
+"lvl": "A1",
+"topic": "greet",
+"pic": "1F91D",
+"emoji": "🤝"
+},
+{
+"id": "w003",
+"ru": "До свидания",
+"st": "До свида́ния",
+"en": "goodbye",
+"lvl": "A1",
+"topic": "greet",
+"pic": "1F6AA",
+"emoji": "🚪"
+},
+{
+"id": "w004",
+"ru": "Пока",
+"st": "Пока́",
+"en": "bye",
+"lvl": "A1",
+"topic": "greet",
+"pic": "1F44B",
+"emoji": "👋"
+},
+{
+"id": "w005",
+"ru": "Спасибо",
+"st": "Спаси́бо",
+"en": "thank you",
+"lvl": "A1",
+"topic": "greet",
+"pic": "1F64F",
+"emoji": "🙏"
+},
+{
+"id": "w006",
+"ru": "Пожалуйста",
+"st": "Пожа́луйста",
+"en": "please / you're welcome",
+"lvl": "A1",
+"topic": "greet",
+"pic": "1F642",
+"emoji": "🙂"
+},
+{
+"id": "w007",
+"ru": "Извините",
+"st": "Извини́те",
+"en": "excuse me / sorry",
+"lvl": "A1",
+"topic": "greet",
+"pic": "1F647",
+"emoji": "🙇"
+},
+{
+"id": "w008",
+"ru": "Да",
+"st": "Да",
+"en": "yes",
+"lvl": "A1",
+"topic": "greet",
+"pic": "2705",
+"emoji": "✅"
+},
+{
+"id": "w009",
+"ru": "Нет",
+"st": "Нет",
+"en": "no",
+"lvl": "A1",
+"topic": "greet",
+"pic": "274C",
+"emoji": "❌"
+},
+{
+"id": "w010",
+"ru": "Доброе утро",
+"st": "До́брое у́тро",
+"en": "good morning",
+"lvl": "A1",
+"topic": "greet",
+"pic": "1F305",
+"emoji": "🌅"
+},
+{
+"id": "w011",
+"ru": "Спокойной ночи",
+"st": "Споко́йной но́чи",
+"en": "good night",
+"lvl": "A1",
+"topic": "greet",
+"pic": "1F319",
+"emoji": "🌙"
+},
+{
+"id": "w012",
+"ru": "я",
+"st": "я",
+"en": "I",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F64B",
+"emoji": "🙋"
+},
+{
+"id": "w013",
+"ru": "ты",
+"st": "ты",
+"en": "you (informal)",
+"lvl": "A1",
+"topic": "people",
+"pic": "1FAF5",
+"emoji": "🫵"
+},
+{
+"id": "w014",
+"ru": "мы",
+"st": "мы",
+"en": "we",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F46B",
+"emoji": "👫"
+},
+{
+"id": "w015",
+"ru": "вы",
+"st": "вы",
+"en": "you (formal / plural)",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F9D1-200D-1F91D-200D-1F9D1",
+"emoji": "🧑‍🤝‍🧑"
+},
+{
+"id": "w016",
+"ru": "друг",
+"st": "друг",
+"en": "friend (m)",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F9D1-200D-1F91D-200D-1F9D1",
+"emoji": "🧑‍🤝‍🧑"
+},
+{
+"id": "w017",
+"ru": "подруга",
+"st": "подру́га",
+"en": "friend (f)",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F46D",
+"emoji": "👭"
+},
+{
+"id": "w018",
+"ru": "человек",
+"st": "челове́к",
+"en": "person",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F9CD",
+"emoji": "🧍"
+},
+{
+"id": "w019",
+"ru": "мужчина",
+"st": "мужчи́на",
+"en": "man",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F468",
+"emoji": "👨"
+},
+{
+"id": "w020",
+"ru": "женщина",
+"st": "же́нщина",
+"en": "woman",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F469",
+"emoji": "👩"
+},
+{
+"id": "w021",
+"ru": "ребёнок",
+"st": "ребёнок",
+"en": "child",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F9D2",
+"emoji": "🧒"
+},
+{
+"id": "w022",
+"ru": "мальчик",
+"st": "ма́льчик",
+"en": "boy",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F466",
+"emoji": "👦"
+},
+{
+"id": "w023",
+"ru": "девочка",
+"st": "де́вочка",
+"en": "girl",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F467",
+"emoji": "👧"
+},
+{
+"id": "w024",
+"ru": "учитель",
+"st": "учи́тель",
+"en": "teacher",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F9D1-200D-1F3EB",
+"emoji": "🧑‍🏫"
+},
+{
+"id": "w025",
+"ru": "студент",
+"st": "студе́нт",
+"en": "student (m)",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F9D1-200D-1F393",
+"emoji": "🧑‍🎓"
+},
+{
+"id": "w026",
+"ru": "врач",
+"st": "врач",
+"en": "doctor",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F9D1-200D-2695",
+"emoji": "🧑‍⚕️"
+},
+{
+"id": "w027",
+"ru": "повар",
+"st": "по́вар",
+"en": "cook",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F9D1-200D-1F373",
+"emoji": "🧑‍🍳"
+},
+{
+"id": "w028",
+"ru": "полицейский",
+"st": "полице́йский",
+"en": "police officer",
+"lvl": "A1",
+"topic": "people",
+"pic": "1F46E",
+"emoji": "👮"
+},
+{
+"id": "w029",
+"ru": "семья",
+"st": "семья́",
+"en": "family",
+"lvl": "A1",
+"topic": "family",
+"pic": "1F468-200D-1F469-200D-1F467",
+"emoji": "👨‍👩‍👧"
+},
+{
+"id": "w030",
+"ru": "мама",
+"st": "ма́ма",
+"en": "mom",
+"lvl": "A1",
+"topic": "family",
+"pic": "1F469",
+"emoji": "👩"
+},
+{
+"id": "w031",
+"ru": "папа",
+"st": "па́па",
+"en": "dad",
+"lvl": "A1",
+"topic": "family",
+"pic": "1F468",
+"emoji": "👨"
+},
+{
+"id": "w032",
+"ru": "брат",
+"st": "брат",
+"en": "brother",
+"lvl": "A1",
+"topic": "family",
+"pic": "1F466",
+"emoji": "👦"
+},
+{
+"id": "w033",
+"ru": "сестра",
+"st": "сестра́",
+"en": "sister",
+"lvl": "A1",
+"topic": "family",
+"pic": "1F467",
+"emoji": "👧"
+},
+{
+"id": "w034",
+"ru": "бабушка",
+"st": "ба́бушка",
+"en": "grandmother",
+"lvl": "A1",
+"topic": "family",
+"pic": "1F475",
+"emoji": "👵"
+},
+{
+"id": "w035",
+"ru": "дедушка",
+"st": "де́душка",
+"en": "grandfather",
+"lvl": "A1",
+"topic": "family",
+"pic": "1F474",
+"emoji": "👴"
+},
+{
+"id": "w036",
+"ru": "сын",
+"st": "сын",
+"en": "son",
+"lvl": "A1",
+"topic": "family",
+"pic": "1F466",
+"emoji": "👦"
+},
+{
+"id": "w037",
+"ru": "дочь",
+"st": "дочь",
+"en": "daughter",
+"lvl": "A1",
+"topic": "family",
+"pic": "1F467",
+"emoji": "👧"
+},
+{
+"id": "w038",
+"ru": "муж",
+"st": "муж",
+"en": "husband",
+"lvl": "A1",
+"topic": "family",
+"pic": "1F935",
+"emoji": "🤵"
+},
+{
+"id": "w039",
+"ru": "жена",
+"st": "жена́",
+"en": "wife",
+"lvl": "A1",
+"topic": "family",
+"pic": "1F470",
+"emoji": "👰"
+},
+{
+"id": "w040",
+"ru": "малыш",
+"st": "малы́ш",
+"en": "baby",
+"lvl": "A1",
+"topic": "family",
+"pic": "1F476",
+"emoji": "👶"
+},
+{
+"id": "w041",
+"ru": "хлеб",
+"st": "хлеб",
+"en": "bread",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F35E",
+"emoji": "🍞"
+},
+{
+"id": "w042",
+"ru": "молоко",
+"st": "молоко́",
+"en": "milk",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F95B",
+"emoji": "🥛"
+},
+{
+"id": "w043",
+"ru": "вода",
+"st": "вода́",
+"en": "water",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F4A7",
+"emoji": "💧"
+},
+{
+"id": "w044",
+"ru": "чай",
+"st": "чай",
+"en": "tea",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F375",
+"emoji": "🍵"
+},
+{
+"id": "w045",
+"ru": "кофе",
+"st": "ко́фе",
+"en": "coffee",
+"lvl": "A1",
+"topic": "food",
+"pic": "2615",
+"emoji": "☕"
+},
+{
+"id": "w046",
+"ru": "сок",
+"st": "сок",
+"en": "juice",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F9C3",
+"emoji": "🧃"
+},
+{
+"id": "w047",
+"ru": "суп",
+"st": "суп",
+"en": "soup",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F372",
+"emoji": "🍲"
+},
+{
+"id": "w048",
+"ru": "мясо",
+"st": "мя́со",
+"en": "meat",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F969",
+"emoji": "🥩"
+},
+{
+"id": "w049",
+"ru": "рыба",
+"st": "ры́ба",
+"en": "fish",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F41F",
+"emoji": "🐟"
+},
+{
+"id": "w050",
+"ru": "яйцо",
+"st": "яйцо́",
+"en": "egg",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F95A",
+"emoji": "🥚"
+},
+{
+"id": "w051",
+"ru": "сыр",
+"st": "сыр",
+"en": "cheese",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F9C0",
+"emoji": "🧀"
+},
+{
+"id": "w052",
+"ru": "масло",
+"st": "ма́сло",
+"en": "butter",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F9C8",
+"emoji": "🧈"
+},
+{
+"id": "w053",
+"ru": "сахар",
+"st": "са́хар",
+"en": "sugar",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F36C",
+"emoji": "🍬"
+},
+{
+"id": "w054",
+"ru": "соль",
+"st": "соль",
+"en": "salt",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F9C2",
+"emoji": "🧂"
+},
+{
+"id": "w055",
+"ru": "каша",
+"st": "ка́ша",
+"en": "porridge",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F963",
+"emoji": "🥣"
+},
+{
+"id": "w056",
+"ru": "картошка",
+"st": "карто́шка",
+"en": "potato",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F954",
+"emoji": "🥔"
+},
+{
+"id": "w057",
+"ru": "помидор",
+"st": "помидо́р",
+"en": "tomato",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F345",
+"emoji": "🍅"
+},
+{
+"id": "w058",
+"ru": "огурец",
+"st": "огуре́ц",
+"en": "cucumber",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F952",
+"emoji": "🥒"
+},
+{
+"id": "w059",
+"ru": "морковь",
+"st": "морко́вь",
+"en": "carrot",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F955",
+"emoji": "🥕"
+},
+{
+"id": "w060",
+"ru": "яблоко",
+"st": "я́блоко",
+"en": "apple",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F34E",
+"emoji": "🍎"
+},
+{
+"id": "w061",
+"ru": "банан",
+"st": "бана́н",
+"en": "banana",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F34C",
+"emoji": "🍌"
+},
+{
+"id": "w062",
+"ru": "лимон",
+"st": "лимо́н",
+"en": "lemon",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F34B",
+"emoji": "🍋"
+},
+{
+"id": "w063",
+"ru": "апельсин",
+"st": "апельси́н",
+"en": "orange",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F34A",
+"emoji": "🍊"
+},
+{
+"id": "w064",
+"ru": "арбуз",
+"st": "арбу́з",
+"en": "watermelon",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F349",
+"emoji": "🍉"
+},
+{
+"id": "w065",
+"ru": "виноград",
+"st": "виногра́д",
+"en": "grapes",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F347",
+"emoji": "🍇"
+},
+{
+"id": "w066",
+"ru": "клубника",
+"st": "клубни́ка",
+"en": "strawberry",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F353",
+"emoji": "🍓"
+},
+{
+"id": "w067",
+"ru": "торт",
+"st": "торт",
+"en": "cake",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F382",
+"emoji": "🎂"
+},
+{
+"id": "w068",
+"ru": "мороженое",
+"st": "моро́женое",
+"en": "ice cream",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F366",
+"emoji": "🍦"
+},
+{
+"id": "w069",
+"ru": "шоколад",
+"st": "шокола́д",
+"en": "chocolate",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F36B",
+"emoji": "🍫"
+},
+{
+"id": "w070",
+"ru": "пицца",
+"st": "пи́цца",
+"en": "pizza",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F355",
+"emoji": "🍕"
+},
+{
+"id": "w071",
+"ru": "бутерброд",
+"st": "бутербро́д",
+"en": "sandwich",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F96A",
+"emoji": "🥪"
+},
+{
+"id": "w072",
+"ru": "завтрак",
+"st": "за́втрак",
+"en": "breakfast",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F373",
+"emoji": "🍳"
+},
+{
+"id": "w073",
+"ru": "обед",
+"st": "обе́д",
+"en": "lunch",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F35D",
+"emoji": "🍝"
+},
+{
+"id": "w074",
+"ru": "ужин",
+"st": "у́жин",
+"en": "dinner",
+"lvl": "A1",
+"topic": "food",
+"pic": "1F37D",
+"emoji": "🍽️"
+},
+{
+"id": "w075",
+"ru": "дом",
+"st": "дом",
+"en": "house",
+"lvl": "A1",
+"topic": "home",
+"pic": "1F3E0",
+"emoji": "🏠"
+},
+{
+"id": "w076",
+"ru": "квартира",
+"st": "кварти́ра",
+"en": "apartment",
+"lvl": "A1",
+"topic": "home",
+"pic": "1F3E2",
+"emoji": "🏢"
+},
+{
+"id": "w077",
+"ru": "комната",
+"st": "ко́мната",
+"en": "room",
+"lvl": "A1",
+"topic": "home",
+"pic": "1F6AA",
+"emoji": "🚪"
+},
+{
+"id": "w078",
+"ru": "кухня",
+"st": "ку́хня",
+"en": "kitchen",
+"lvl": "A1",
+"topic": "home",
+"pic": "1F373",
+"emoji": "🍳"
+},
+{
+"id": "w079",
+"ru": "окно",
+"st": "окно́",
+"en": "window",
+"lvl": "A1",
+"topic": "home",
+"pic": "1FA9F",
+"emoji": "🪟"
+},
+{
+"id": "w080",
+"ru": "дверь",
+"st": "дверь",
+"en": "door",
+"lvl": "A1",
+"topic": "home",
+"pic": "1F6AA",
+"emoji": "🚪"
+},
+{
+"id": "w081",
+"ru": "стол",
+"st": "стол",
+"en": "table",
+"lvl": "A1",
+"topic": "home",
+"pic": "1FA91",
+"emoji": "🪑"
+},
+{
+"id": "w082",
+"ru": "стул",
+"st": "стул",
+"en": "chair",
+"lvl": "A1",
+"topic": "home",
+"pic": "1FA91",
+"emoji": "🪑"
+},
+{
+"id": "w083",
+"ru": "кровать",
+"st": "крова́ть",
+"en": "bed",
+"lvl": "A1",
+"topic": "home",
+"pic": "1F6CF",
+"emoji": "🛏️"
+},
+{
+"id": "w084",
+"ru": "диван",
+"st": "дива́н",
+"en": "sofa",
+"lvl": "A1",
+"topic": "home",
+"pic": "1F6CB",
+"emoji": "🛋️"
+},
+{
+"id": "w085",
+"ru": "шкаф",
+"st": "шкаф",
+"en": "wardrobe / cupboard",
+"lvl": "A1",
+"topic": "home",
+"pic": "1F5C4",
+"emoji": "🗄️"
+},
+{
+"id": "w086",
+"ru": "лампа",
+"st": "ла́мпа",
+"en": "lamp",
+"lvl": "A1",
+"topic": "home",
+"pic": "1F4A1",
+"emoji": "💡"
+},
+{
+"id": "w087",
+"ru": "телевизор",
+"st": "телеви́зор",
+"en": "TV",
+"lvl": "A1",
+"topic": "home",
+"pic": "1F4FA",
+"emoji": "📺"
+},
+{
+"id": "w088",
+"ru": "ванная",
+"st": "ва́нная",
+"en": "bathroom",
+"lvl": "A1",
+"topic": "home",
+"pic": "1F6C1",
+"emoji": "🛁"
+},
+{
+"id": "w089",
+"ru": "ключ",
+"st": "ключ",
+"en": "key",
+"lvl": "A1",
+"topic": "home",
+"pic": "1F511",
+"emoji": "🔑"
+},
+{
+"id": "w090",
+"ru": "часы",
+"st": "часы́",
+"en": "clock / watch",
+"lvl": "A1",
+"topic": "home",
+"pic": "23F0",
+"emoji": "⏰"
+},
+{
+"id": "w091",
+"ru": "зеркало",
+"st": "зе́ркало",
+"en": "mirror",
+"lvl": "A1",
+"topic": "home",
+"pic": "1FA9E",
+"emoji": "🪞"
+},
+{
+"id": "w092",
+"ru": "книга",
+"st": "кни́га",
+"en": "book",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F4D6",
+"emoji": "📖"
+},
+{
+"id": "w093",
+"ru": "тетрадь",
+"st": "тетра́дь",
+"en": "notebook",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F4D3",
+"emoji": "📓"
+},
+{
+"id": "w094",
+"ru": "ручка",
+"st": "ру́чка",
+"en": "pen",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F58A",
+"emoji": "🖊️"
+},
+{
+"id": "w095",
+"ru": "карандаш",
+"st": "каранда́ш",
+"en": "pencil",
+"lvl": "A1",
+"topic": "things",
+"pic": "270F",
+"emoji": "✏️"
+},
+{
+"id": "w096",
+"ru": "телефон",
+"st": "телефо́н",
+"en": "phone",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F4F1",
+"emoji": "📱"
+},
+{
+"id": "w097",
+"ru": "компьютер",
+"st": "компью́тер",
+"en": "computer",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F4BB",
+"emoji": "💻"
+},
+{
+"id": "w098",
+"ru": "сумка",
+"st": "су́мка",
+"en": "bag",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F45C",
+"emoji": "👜"
+},
+{
+"id": "w099",
+"ru": "деньги",
+"st": "де́ньги",
+"en": "money",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F4B0",
+"emoji": "💰"
+},
+{
+"id": "w100",
+"ru": "билет",
+"st": "биле́т",
+"en": "ticket",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F3AB",
+"emoji": "🎫"
+},
+{
+"id": "w101",
+"ru": "газета",
+"st": "газе́та",
+"en": "newspaper",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F4F0",
+"emoji": "📰"
+},
+{
+"id": "w102",
+"ru": "письмо",
+"st": "письмо́",
+"en": "letter",
+"lvl": "A1",
+"topic": "things",
+"pic": null,
+"emoji": "✉️"
+},
+{
+"id": "w103",
+"ru": "фотоаппарат",
+"st": "фотоаппара́т",
+"en": "camera",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F4F7",
+"emoji": "📷"
+},
+{
+"id": "w104",
+"ru": "очки",
+"st": "очки́",
+"en": "glasses",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F453",
+"emoji": "👓"
+},
+{
+"id": "w105",
+"ru": "зонт",
+"st": "зонт",
+"en": "umbrella",
+"lvl": "A1",
+"topic": "things",
+"pic": "2602",
+"emoji": "☂️"
+},
+{
+"id": "w106",
+"ru": "подарок",
+"st": "пода́рок",
+"en": "gift",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F381",
+"emoji": "🎁"
+},
+{
+"id": "w107",
+"ru": "цветы",
+"st": "цветы́",
+"en": "flowers",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F490",
+"emoji": "💐"
+},
+{
+"id": "w108",
+"ru": "мяч",
+"st": "мяч",
+"en": "ball",
+"lvl": "A1",
+"topic": "things",
+"pic": "26BD",
+"emoji": "⚽"
+},
+{
+"id": "w109",
+"ru": "гитара",
+"st": "гита́ра",
+"en": "guitar",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F3B8",
+"emoji": "🎸"
+},
+{
+"id": "w110",
+"ru": "рисунок",
+"st": "рису́нок",
+"en": "drawing",
+"lvl": "A1",
+"topic": "things",
+"pic": "1F5BC",
+"emoji": "🖼️"
+},
+{
+"id": "w111",
+"ru": "одежда",
+"st": "оде́жда",
+"en": "clothes",
+"lvl": "A1",
+"topic": "clothes",
+"pic": "1F45A",
+"emoji": "👚"
+},
+{
+"id": "w112",
+"ru": "рубашка",
+"st": "руба́шка",
+"en": "shirt",
+"lvl": "A1",
+"topic": "clothes",
+"pic": "1F454",
+"emoji": "👔"
+},
+{
+"id": "w113",
+"ru": "футболка",
+"st": "футбо́лка",
+"en": "T-shirt",
+"lvl": "A1",
+"topic": "clothes",
+"pic": "1F455",
+"emoji": "👕"
+},
+{
+"id": "w114",
+"ru": "брюки",
+"st": "брю́ки",
+"en": "trousers",
+"lvl": "A1",
+"topic": "clothes",
+"pic": "1F456",
+"emoji": "👖"
+},
+{
+"id": "w115",
+"ru": "платье",
+"st": "пла́тье",
+"en": "dress",
+"lvl": "A1",
+"topic": "clothes",
+"pic": "1F457",
+"emoji": "👗"
+},
+{
+"id": "w116",
+"ru": "куртка",
+"st": "ку́ртка",
+"en": "jacket",
+"lvl": "A1",
+"topic": "clothes",
+"pic": "1F9E5",
+"emoji": "🧥"
+},
+{
+"id": "w117",
+"ru": "шуба",
+"st": "шу́ба",
+"en": "fur coat",
+"lvl": "A1",
+"topic": "clothes",
+"pic": "1F9E5",
+"emoji": "🧥"
+},
+{
+"id": "w118",
+"ru": "шапка",
+"st": "ша́пка",
+"en": "hat",
+"lvl": "A1",
+"topic": "clothes",
+"pic": "1F9E2",
+"emoji": "🧢"
+},
+{
+"id": "w119",
+"ru": "туфли",
+"st": "ту́фли",
+"en": "shoes",
+"lvl": "A1",
+"topic": "clothes",
+"pic": "1F45E",
+"emoji": "👞"
+},
+{
+"id": "w120",
+"ru": "сапоги",
+"st": "сапоги́",
+"en": "boots",
+"lvl": "A1",
+"topic": "clothes",
+"pic": "1F462",
+"emoji": "👢"
+},
+{
+"id": "w121",
+"ru": "карман",
+"st": "карма́н",
+"en": "pocket",
+"lvl": "A1",
+"topic": "clothes",
+"pic": "1F456",
+"emoji": "👖"
+},
+{
+"id": "w122",
+"ru": "собака",
+"st": "соба́ка",
+"en": "dog",
+"lvl": "A1",
+"topic": "animals",
+"pic": "1F415",
+"emoji": "🐕"
+},
+{
+"id": "w123",
+"ru": "кошка",
+"st": "ко́шка",
+"en": "cat",
+"lvl": "A1",
+"topic": "animals",
+"pic": "1F408",
+"emoji": "🐈"
+},
+{
+"id": "w124",
+"ru": "птица",
+"st": "пти́ца",
+"en": "bird",
+"lvl": "A1",
+"topic": "animals",
+"pic": "1F426",
+"emoji": "🐦"
+},
+{
+"id": "w125",
+"ru": "лошадь",
+"st": "ло́шадь",
+"en": "horse",
+"lvl": "A1",
+"topic": "animals",
+"pic": "1F434",
+"emoji": "🐴"
+},
+{
+"id": "w126",
+"ru": "корова",
+"st": "коро́ва",
+"en": "cow",
+"lvl": "A1",
+"topic": "animals",
+"pic": "1F404",
+"emoji": "🐄"
+},
+{
+"id": "w127",
+"ru": "свинья",
+"st": "свинья́",
+"en": "pig",
+"lvl": "A1",
+"topic": "animals",
+"pic": "1F416",
+"emoji": "🐖"
+},
+{
+"id": "w129",
+"ru": "медведь",
+"st": "медве́дь",
+"en": "bear",
+"lvl": "A1",
+"topic": "animals",
+"pic": "1F43B",
+"emoji": "🐻"
+},
+{
+"id": "w130",
+"ru": "заяц",
+"st": "за́яц",
+"en": "hare",
+"lvl": "A1",
+"topic": "animals",
+"pic": "1F407",
+"emoji": "🐇"
+},
+{
+"id": "w131",
+"ru": "волк",
+"st": "во́лк",
+"en": "wolf",
+"lvl": "A1",
+"topic": "animals",
+"pic": "1F43A",
+"emoji": "🐺"
+},
+{
+"id": "w132",
+"ru": "лиса",
+"st": "лиса́",
+"en": "fox",
+"lvl": "A1",
+"topic": "animals",
+"pic": "1F98A",
+"emoji": "🦊"
+},
+{
+"id": "w133",
+"ru": "мышь",
+"st": "мышь",
+"en": "mouse",
+"lvl": "A1",
+"topic": "animals",
+"pic": "1F42D",
+"emoji": "🐭"
+},
+{
+"id": "w134",
+"ru": "лебедь",
+"st": "ле́бедь",
+"en": "swan",
+"lvl": "A1",
+"topic": "animals",
+"pic": "1F9A2",
+"emoji": "🦢"
+},
+{
+"id": "w135",
+"ru": "город",
+"st": "го́род",
+"en": "city",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F3D9",
+"emoji": "🏙️"
+},
+{
+"id": "w136",
+"ru": "улица",
+"st": "у́лица",
+"en": "street",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F6E3",
+"emoji": "🛣️"
+},
+{
+"id": "w137",
+"ru": "магазин",
+"st": "магази́н",
+"en": "shop",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F3EA",
+"emoji": "🏪"
+},
+{
+"id": "w138",
+"ru": "ресторан",
+"st": "рестора́н",
+"en": "restaurant",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F374",
+"emoji": "🍴"
+},
+{
+"id": "w139",
+"ru": "кафе",
+"st": "кафе́",
+"en": "café",
+"lvl": "A1",
+"topic": "city",
+"pic": "2615",
+"emoji": "☕"
+},
+{
+"id": "w140",
+"ru": "школа",
+"st": "шко́ла",
+"en": "school",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F3EB",
+"emoji": "🏫"
+},
+{
+"id": "w141",
+"ru": "университет",
+"st": "университе́т",
+"en": "university",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F393",
+"emoji": "🎓"
+},
+{
+"id": "w142",
+"ru": "больница",
+"st": "больни́ца",
+"en": "hospital",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F3E5",
+"emoji": "🏥"
+},
+{
+"id": "w143",
+"ru": "аптека",
+"st": "апте́ка",
+"en": "pharmacy",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F48A",
+"emoji": "💊"
+},
+{
+"id": "w144",
+"ru": "банк",
+"st": "банк",
+"en": "bank",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F3E6",
+"emoji": "🏦"
+},
+{
+"id": "w145",
+"ru": "почта",
+"st": "по́чта",
+"en": "post office",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F4EE",
+"emoji": "📮"
+},
+{
+"id": "w146",
+"ru": "парк",
+"st": "парк",
+"en": "park",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F333",
+"emoji": "🌳"
+},
+{
+"id": "w147",
+"ru": "музей",
+"st": "музе́й",
+"en": "museum",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F3DB",
+"emoji": "🏛️"
+},
+{
+"id": "w148",
+"ru": "театр",
+"st": "теа́тр",
+"en": "theatre",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F3AD",
+"emoji": "🎭"
+},
+{
+"id": "w149",
+"ru": "кинотеатр",
+"st": "кинотеа́тр",
+"en": "cinema",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F3AC",
+"emoji": "🎬"
+},
+{
+"id": "w150",
+"ru": "вокзал",
+"st": "вокза́л",
+"en": "station",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F689",
+"emoji": "🚉"
+},
+{
+"id": "w151",
+"ru": "аэропорт",
+"st": "аэропо́рт",
+"en": "airport",
+"lvl": "A1",
+"topic": "city",
+"pic": null,
+"emoji": "✈️"
+},
+{
+"id": "w152",
+"ru": "мост",
+"st": "мост",
+"en": "bridge",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F309",
+"emoji": "🌉"
+},
+{
+"id": "w153",
+"ru": "площадь",
+"st": "пло́щадь",
+"en": "square",
+"lvl": "A1",
+"topic": "city",
+"pic": "26F2",
+"emoji": "⛲"
+},
+{
+"id": "w154",
+"ru": "стадион",
+"st": "стадио́н",
+"en": "stadium",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F3DF",
+"emoji": "🏟️"
+},
+{
+"id": "w155",
+"ru": "гостиница",
+"st": "гости́ница",
+"en": "hotel",
+"lvl": "A1",
+"topic": "city",
+"pic": "1F3E8",
+"emoji": "🏨"
+},
+{
+"id": "w156",
+"ru": "автобус",
+"st": "авто́бус",
+"en": "bus",
+"lvl": "A1",
+"topic": "transport",
+"pic": "1F68C",
+"emoji": "🚌"
+},
+{
+"id": "w157",
+"ru": "трамвай",
+"st": "трамва́й",
+"en": "tram",
+"lvl": "A1",
+"topic": "transport",
+"pic": "1F68B",
+"emoji": "🚋"
+},
+{
+"id": "w158",
+"ru": "метро",
+"st": "метро́",
+"en": "metro",
+"lvl": "A1",
+"topic": "transport",
+"pic": "1F687",
+"emoji": "🚇"
+},
+{
+"id": "w159",
+"ru": "поезд",
+"st": "по́езд",
+"en": "train",
+"lvl": "A1",
+"topic": "transport",
+"pic": "1F686",
+"emoji": "🚆"
+},
+{
+"id": "w160",
+"ru": "самолёт",
+"st": "самолёт",
+"en": "plane",
+"lvl": "A1",
+"topic": "transport",
+"pic": null,
+"emoji": "✈️"
+},
+{
+"id": "w161",
+"ru": "машина",
+"st": "маши́на",
+"en": "car",
+"lvl": "A1",
+"topic": "transport",
+"pic": "1F697",
+"emoji": "🚗"
+},
+{
+"id": "w162",
+"ru": "такси",
+"st": "такси́",
+"en": "taxi",
+"lvl": "A1",
+"topic": "transport",
+"pic": "1F695",
+"emoji": "🚕"
+},
+{
+"id": "w163",
+"ru": "велосипед",
+"st": "велосипе́д",
+"en": "bicycle",
+"lvl": "A1",
+"topic": "transport",
+"pic": "1F6B2",
+"emoji": "🚲"
+},
+{
+"id": "w164",
+"ru": "корабль",
+"st": "кора́бль",
+"en": "ship",
+"lvl": "A1",
+"topic": "transport",
+"pic": "1F6A2",
+"emoji": "🚢"
+},
+{
+"id": "w165",
+"ru": "солнце",
+"st": "со́лнце",
+"en": "sun",
+"lvl": "A1",
+"topic": "nature",
+"pic": "2600",
+"emoji": "☀️"
+},
+{
+"id": "w166",
+"ru": "луна",
+"st": "луна́",
+"en": "moon",
+"lvl": "A1",
+"topic": "nature",
+"pic": "1F319",
+"emoji": "🌙"
+},
+{
+"id": "w167",
+"ru": "звезда",
+"st": "звезда́",
+"en": "star",
+"lvl": "A1",
+"topic": "nature",
+"pic": "2B50",
+"emoji": "⭐"
+},
+{
+"id": "w168",
+"ru": "небо",
+"st": "не́бо",
+"en": "sky",
+"lvl": "A1",
+"topic": "nature",
+"pic": "1F324",
+"emoji": "🌤️"
+},
+{
+"id": "w169",
+"ru": "дождь",
+"st": "дождь",
+"en": "rain",
+"lvl": "A1",
+"topic": "nature",
+"pic": "1F327",
+"emoji": "🌧️"
+},
+{
+"id": "w170",
+"ru": "снег",
+"st": "снег",
+"en": "snow",
+"lvl": "A1",
+"topic": "nature",
+"pic": "2744",
+"emoji": "❄️"
+},
+{
+"id": "w171",
+"ru": "ветер",
+"st": "ве́тер",
+"en": "wind",
+"lvl": "A1",
+"topic": "nature",
+"pic": "1F4A8",
+"emoji": "💨"
+},
+{
+"id": "w172",
+"ru": "дерево",
+"st": "де́рево",
+"en": "tree",
+"lvl": "A1",
+"topic": "nature",
+"pic": "1F333",
+"emoji": "🌳"
+},
+{
+"id": "w173",
+"ru": "цветок",
+"st": "цвето́к",
+"en": "flower",
+"lvl": "A1",
+"topic": "nature",
+"pic": "1F338",
+"emoji": "🌸"
+},
+{
+"id": "w174",
+"ru": "лес",
+"st": "лес",
+"en": "forest",
+"lvl": "A1",
+"topic": "nature",
+"pic": "1F332",
+"emoji": "🌲"
+},
+{
+"id": "w175",
+"ru": "море",
+"st": "мо́ре",
+"en": "sea",
+"lvl": "A1",
+"topic": "nature",
+"pic": "1F30A",
+"emoji": "🌊"
+},
+{
+"id": "w176",
+"ru": "река",
+"st": "река́",
+"en": "river",
+"lvl": "A1",
+"topic": "nature",
+"pic": "1F3DE",
+"emoji": "🏞️"
+},
+{
+"id": "w177",
+"ru": "гора",
+"st": "гора́",
+"en": "mountain",
+"lvl": "A1",
+"topic": "nature",
+"pic": "26F0",
+"emoji": "⛰️"
+},
+{
+"id": "w178",
+"ru": "озеро",
+"st": "о́зеро",
+"en": "lake",
+"lvl": "A1",
+"topic": "nature",
+"pic": "1F3DE",
+"emoji": "🏞️"
+},
+{
+"id": "w179",
+"ru": "голова",
+"st": "голова́",
+"en": "head",
+"lvl": "A1",
+"topic": "body",
+"pic": "1F9E0",
+"emoji": "🧠"
+},
+{
+"id": "w180",
+"ru": "глаз",
+"st": "глаз",
+"en": "eye",
+"lvl": "A1",
+"topic": "body",
+"pic": "1F441",
+"emoji": "👁️"
+},
+{
+"id": "w181",
+"ru": "нос",
+"st": "нос",
+"en": "nose",
+"lvl": "A1",
+"topic": "body",
+"pic": "1F443",
+"emoji": "👃"
+},
+{
+"id": "w182",
+"ru": "рот",
+"st": "рот",
+"en": "mouth",
+"lvl": "A1",
+"topic": "body",
+"pic": "1F444",
+"emoji": "👄"
+},
+{
+"id": "w183",
+"ru": "ухо",
+"st": "у́хо",
+"en": "ear",
+"lvl": "A1",
+"topic": "body",
+"pic": "1F442",
+"emoji": "👂"
+},
+{
+"id": "w184",
+"ru": "рука",
+"st": "рука́",
+"en": "hand / arm",
+"lvl": "A1",
+"topic": "body",
+"pic": null,
+"emoji": "✋"
+},
+{
+"id": "w185",
+"ru": "нога",
+"st": "нога́",
+"en": "leg / foot",
+"lvl": "A1",
+"topic": "body",
+"pic": "1F9B5",
+"emoji": "🦵"
+},
+{
+"id": "w186",
+"ru": "сердце",
+"st": "се́рдце",
+"en": "heart",
+"lvl": "A1",
+"topic": "body",
+"pic": "2764",
+"emoji": "❤️"
+},
+{
+"id": "w187",
+"ru": "зуб",
+"st": "зуб",
+"en": "tooth",
+"lvl": "A1",
+"topic": "body",
+"pic": "1F9B7",
+"emoji": "🦷"
+},
+{
+"id": "w188",
+"ru": "день",
+"st": "день",
+"en": "day",
+"lvl": "A1",
+"topic": "time",
+"pic": "1F4C5",
+"emoji": "📅"
+},
+{
+"id": "w189",
+"ru": "ночь",
+"st": "ночь",
+"en": "night",
+"lvl": "A1",
+"topic": "time",
+"pic": "1F303",
+"emoji": "🌃"
+},
+{
+"id": "w190",
+"ru": "утро",
+"st": "у́тро",
+"en": "morning",
+"lvl": "A1",
+"topic": "time",
+"pic": "1F305",
+"emoji": "🌅"
+},
+{
+"id": "w191",
+"ru": "вечер",
+"st": "ве́чер",
+"en": "evening",
+"lvl": "A1",
+"topic": "time",
+"pic": "1F306",
+"emoji": "🌆"
+},
+{
+"id": "w192",
+"ru": "неделя",
+"st": "неде́ля",
+"en": "week",
+"lvl": "A1",
+"topic": "time",
+"pic": "1F5D3",
+"emoji": "🗓️"
+},
+{
+"id": "w193",
+"ru": "месяц",
+"st": "ме́сяц",
+"en": "month",
+"lvl": "A1",
+"topic": "time",
+"pic": "1F4C6",
+"emoji": "📆"
+},
+{
+"id": "w194",
+"ru": "год",
+"st": "год",
+"en": "year",
+"lvl": "A1",
+"topic": "time",
+"pic": "1F386",
+"emoji": "🎆"
+},
+{
+"id": "w195",
+"ru": "сегодня",
+"st": "сего́дня",
+"en": "today",
+"lvl": "A1",
+"topic": "time",
+"pic": "1F4C5",
+"emoji": "📅"
+},
+{
+"id": "w196",
+"ru": "завтра",
+"st": "за́втра",
+"en": "tomorrow",
+"lvl": "A1",
+"topic": "time",
+"pic": "27A1",
+"emoji": "➡️"
+},
+{
+"id": "w197",
+"ru": "вчера",
+"st": "вчера́",
+"en": "yesterday",
+"lvl": "A1",
+"topic": "time",
+"pic": "2B05",
+"emoji": "⬅️"
+},
+{
+"id": "w198",
+"ru": "сейчас",
+"st": "сейча́с",
+"en": "now",
+"lvl": "A1",
+"topic": "time",
+"pic": "23F1",
+"emoji": "⏱️"
+},
+{
+"id": "w199",
+"ru": "понедельник",
+"st": "понеде́льник",
+"en": "Monday",
+"lvl": "A1",
+"topic": "time",
+"pic": null,
+"emoji": "1️⃣"
+},
+{
+"id": "w200",
+"ru": "вторник",
+"st": "вто́рник",
+"en": "Tuesday",
+"lvl": "A1",
+"topic": "time",
+"pic": null,
+"emoji": "2️⃣"
+},
+{
+"id": "w201",
+"ru": "среда",
+"st": "среда́",
+"en": "Wednesday",
+"lvl": "A1",
+"topic": "time",
+"pic": null,
+"emoji": "3️⃣"
+},
+{
+"id": "w202",
+"ru": "четверг",
+"st": "четве́рг",
+"en": "Thursday",
+"lvl": "A1",
+"topic": "time",
+"pic": null,
+"emoji": "4️⃣"
+},
+{
+"id": "w203",
+"ru": "пятница",
+"st": "пя́тница",
+"en": "Friday",
+"lvl": "A1",
+"topic": "time",
+"pic": null,
+"emoji": "5️⃣"
+},
+{
+"id": "w204",
+"ru": "суббота",
+"st": "суббо́та",
+"en": "Saturday",
+"lvl": "A1",
+"topic": "time",
+"pic": null,
+"emoji": "6️⃣"
+},
+{
+"id": "w205",
+"ru": "воскресенье",
+"st": "воскресе́нье",
+"en": "Sunday",
+"lvl": "A1",
+"topic": "time",
+"pic": null,
+"emoji": "7️⃣"
+},
+{
+"id": "w206",
+"ru": "быть",
+"st": "быть",
+"en": "to be",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F9CD",
+"emoji": "🧍"
+},
+{
+"id": "w207",
+"ru": "делать",
+"st": "де́лать",
+"en": "to do / make",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F6E0",
+"emoji": "🛠️"
+},
+{
+"id": "w208",
+"ru": "читать",
+"st": "чита́ть",
+"en": "to read",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F4D6",
+"emoji": "📖"
+},
+{
+"id": "w209",
+"ru": "писать",
+"st": "писа́ть",
+"en": "to write",
+"lvl": "A1",
+"topic": "verbs",
+"pic": null,
+"emoji": "✍️"
+},
+{
+"id": "w210",
+"ru": "говорить",
+"st": "говори́ть",
+"en": "to speak",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F5E3",
+"emoji": "🗣️"
+},
+{
+"id": "w211",
+"ru": "слушать",
+"st": "слу́шать",
+"en": "to listen",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F442",
+"emoji": "👂"
+},
+{
+"id": "w212",
+"ru": "смотреть",
+"st": "смотре́ть",
+"en": "to watch / look",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F440",
+"emoji": "👀"
+},
+{
+"id": "w213",
+"ru": "жить",
+"st": "жить",
+"en": "to live",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F3E0",
+"emoji": "🏠"
+},
+{
+"id": "w214",
+"ru": "работать",
+"st": "рабо́тать",
+"en": "to work",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F4BC",
+"emoji": "💼"
+},
+{
+"id": "w215",
+"ru": "учиться",
+"st": "учи́ться",
+"en": "to study",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F393",
+"emoji": "🎓"
+},
+{
+"id": "w216",
+"ru": "знать",
+"st": "знать",
+"en": "to know",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F4A1",
+"emoji": "💡"
+},
+{
+"id": "w217",
+"ru": "понимать",
+"st": "понима́ть",
+"en": "to understand",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F914",
+"emoji": "🤔"
+},
+{
+"id": "w218",
+"ru": "любить",
+"st": "люби́ть",
+"en": "to love / like",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "2764",
+"emoji": "❤️"
+},
+{
+"id": "w219",
+"ru": "хотеть",
+"st": "хоте́ть",
+"en": "to want",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F932",
+"emoji": "🤲"
+},
+{
+"id": "w220",
+"ru": "мочь",
+"st": "мочь",
+"en": "can / to be able",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F4AA",
+"emoji": "💪"
+},
+{
+"id": "w221",
+"ru": "есть",
+"st": "есть",
+"en": "to eat",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F37D",
+"emoji": "🍽️"
+},
+{
+"id": "w222",
+"ru": "пить",
+"st": "пить",
+"en": "to drink",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F964",
+"emoji": "🥤"
+},
+{
+"id": "w223",
+"ru": "спать",
+"st": "спать",
+"en": "to sleep",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F634",
+"emoji": "😴"
+},
+{
+"id": "w224",
+"ru": "идти",
+"st": "идти́",
+"en": "to go (on foot, one way)",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F6B6",
+"emoji": "🚶"
+},
+{
+"id": "w225",
+"ru": "ехать",
+"st": "е́хать",
+"en": "to go (by vehicle, one way)",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F697",
+"emoji": "🚗"
+},
+{
+"id": "w226",
+"ru": "играть",
+"st": "игра́ть",
+"en": "to play",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F3AE",
+"emoji": "🎮"
+},
+{
+"id": "w227",
+"ru": "рисовать",
+"st": "рисова́ть",
+"en": "to draw",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F3A8",
+"emoji": "🎨"
+},
+{
+"id": "w228",
+"ru": "танцевать",
+"st": "танцева́ть",
+"en": "to dance",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F483",
+"emoji": "💃"
+},
+{
+"id": "w229",
+"ru": "петь",
+"st": "петь",
+"en": "to sing",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F3A4",
+"emoji": "🎤"
+},
+{
+"id": "w230",
+"ru": "покупать",
+"st": "покупа́ть",
+"en": "to buy",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F6D2",
+"emoji": "🛒"
+},
+{
+"id": "w231",
+"ru": "давать",
+"st": "дава́ть",
+"en": "to give",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F932",
+"emoji": "🤲"
+},
+{
+"id": "w232",
+"ru": "плыть",
+"st": "плыть",
+"en": "to swim / sail",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F3CA",
+"emoji": "🏊"
+},
+{
+"id": "w233",
+"ru": "бегать",
+"st": "бе́гать",
+"en": "to run",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F3C3",
+"emoji": "🏃"
+},
+{
+"id": "w234",
+"ru": "звонить",
+"st": "звони́ть",
+"en": "to call",
+"lvl": "A1",
+"topic": "verbs",
+"pic": "1F4DE",
+"emoji": "📞"
+},
+{
+"id": "w235",
+"ru": "большой",
+"st": "большо́й",
+"en": "big",
+"lvl": "A1",
+"topic": "adj",
+"pic": "1F418",
+"emoji": "🐘"
+},
+{
+"id": "w236",
+"ru": "маленький",
+"st": "ма́ленький",
+"en": "small",
+"lvl": "A1",
+"topic": "adj",
+"pic": "1F41C",
+"emoji": "🐜"
+},
+{
+"id": "w237",
+"ru": "новый",
+"st": "но́вый",
+"en": "new",
+"lvl": "A1",
+"topic": "adj",
+"pic": "1F195",
+"emoji": "🆕"
+},
+{
+"id": "w238",
+"ru": "старый",
+"st": "ста́рый",
+"en": "old",
+"lvl": "A1",
+"topic": "adj",
+"pic": "1F570",
+"emoji": "🕰️"
+},
+{
+"id": "w239",
+"ru": "хороший",
+"st": "хоро́ший",
+"en": "good",
+"lvl": "A1",
+"topic": "adj",
+"pic": "1F44D",
+"emoji": "👍"
+},
+{
+"id": "w240",
+"ru": "плохой",
+"st": "плохо́й",
+"en": "bad",
+"lvl": "A1",
+"topic": "adj",
+"pic": "1F44E",
+"emoji": "👎"
+},
+{
+"id": "w241",
+"ru": "красивый",
+"st": "краси́вый",
+"en": "beautiful",
+"lvl": "A1",
+"topic": "adj",
+"pic": "1F33A",
+"emoji": "🌺"
+},
+{
+"id": "w242",
+"ru": "горячий",
+"st": "горя́чий",
+"en": "hot",
+"lvl": "A1",
+"topic": "adj",
+"pic": "1F525",
+"emoji": "🔥"
+},
+{
+"id": "w243",
+"ru": "холодный",
+"st": "холо́дный",
+"en": "cold",
+"lvl": "A1",
+"topic": "adj",
+"pic": "1F976",
+"emoji": "🥶"
+},
+{
+"id": "w244",
+"ru": "вкусный",
+"st": "вку́сный",
+"en": "tasty",
+"lvl": "A1",
+"topic": "adj",
+"pic": "1F60B",
+"emoji": "😋"
+},
+{
+"id": "w245",
+"ru": "дорогой",
+"st": "дорого́й",
+"en": "expensive / dear",
+"lvl": "A1",
+"topic": "adj",
+"pic": "1F48E",
+"emoji": "💎"
+},
+{
+"id": "w246",
+"ru": "дешёвый",
+"st": "дешёвый",
+"en": "cheap",
+"lvl": "A1",
+"topic": "adj",
+"pic": "1F3F7",
+"emoji": "🏷️"
+},
+{
+"id": "w247",
+"ru": "быстрый",
+"st": "бы́стрый",
+"en": "fast",
+"lvl": "A1",
+"topic": "adj",
+"pic": "26A1",
+"emoji": "⚡"
+},
+{
+"id": "w248",
+"ru": "красный",
+"st": "кра́сный",
+"en": "red",
+"lvl": "A1",
+"topic": "color",
+"pic": "1F534",
+"emoji": "🔴"
+},
+{
+"id": "w249",
+"ru": "синий",
+"st": "си́ний",
+"en": "dark blue",
+"lvl": "A1",
+"topic": "color",
+"pic": "1F535",
+"emoji": "🔵"
+},
+{
+"id": "w250",
+"ru": "голубой",
+"st": "голубо́й",
+"en": "light blue",
+"lvl": "A1",
+"topic": "color",
+"pic": "1F7E6",
+"emoji": "🟦"
+},
+{
+"id": "w251",
+"ru": "зелёный",
+"st": "зелёный",
+"en": "green",
+"lvl": "A1",
+"topic": "color",
+"pic": "1F7E2",
+"emoji": "🟢"
+},
+{
+"id": "w252",
+"ru": "жёлтый",
+"st": "жёлтый",
+"en": "yellow",
+"lvl": "A1",
+"topic": "color",
+"pic": "1F7E1",
+"emoji": "🟡"
+},
+{
+"id": "w253",
+"ru": "чёрный",
+"st": "чёрный",
+"en": "black",
+"lvl": "A1",
+"topic": "color",
+"pic": "26AB",
+"emoji": "⚫"
+},
+{
+"id": "w254",
+"ru": "белый",
+"st": "бе́лый",
+"en": "white",
+"lvl": "A1",
+"topic": "color",
+"pic": "26AA",
+"emoji": "⚪"
+},
+{
+"id": "w255",
+"ru": "оранжевый",
+"st": "ора́нжевый",
+"en": "orange",
+"lvl": "A1",
+"topic": "color",
+"pic": "1F7E0",
+"emoji": "🟠"
+},
+{
+"id": "w256",
+"ru": "фиолетовый",
+"st": "фиоле́товый",
+"en": "purple",
+"lvl": "A1",
+"topic": "color",
+"pic": "1F7E3",
+"emoji": "🟣"
+},
+{
+"id": "w257",
+"ru": "коричневый",
+"st": "кори́чневый",
+"en": "brown",
+"lvl": "A1",
+"topic": "color",
+"pic": "1F7E4",
+"emoji": "🟤"
+},
+{
+"id": "w258",
+"ru": "один",
+"st": "оди́н",
+"en": "one",
+"lvl": "A1",
+"topic": "num",
+"pic": null,
+"emoji": "1️⃣"
+},
+{
+"id": "w259",
+"ru": "два",
+"st": "два",
+"en": "two",
+"lvl": "A1",
+"topic": "num",
+"pic": null,
+"emoji": "2️⃣"
+},
+{
+"id": "w260",
+"ru": "три",
+"st": "три",
+"en": "three",
+"lvl": "A1",
+"topic": "num",
+"pic": null,
+"emoji": "3️⃣"
+},
+{
+"id": "w261",
+"ru": "четыре",
+"st": "четы́ре",
+"en": "four",
+"lvl": "A1",
+"topic": "num",
+"pic": null,
+"emoji": "4️⃣"
+},
+{
+"id": "w262",
+"ru": "пять",
+"st": "пять",
+"en": "five",
+"lvl": "A1",
+"topic": "num",
+"pic": null,
+"emoji": "5️⃣"
+},
+{
+"id": "w263",
+"ru": "шесть",
+"st": "шесть",
+"en": "six",
+"lvl": "A1",
+"topic": "num",
+"pic": null,
+"emoji": "6️⃣"
+},
+{
+"id": "w264",
+"ru": "семь",
+"st": "семь",
+"en": "seven",
+"lvl": "A1",
+"topic": "num",
+"pic": null,
+"emoji": "7️⃣"
+},
+{
+"id": "w265",
+"ru": "восемь",
+"st": "во́семь",
+"en": "eight",
+"lvl": "A1",
+"topic": "num",
+"pic": null,
+"emoji": "8️⃣"
+},
+{
+"id": "w266",
+"ru": "девять",
+"st": "де́вять",
+"en": "nine",
+"lvl": "A1",
+"topic": "num",
+"pic": null,
+"emoji": "9️⃣"
+},
+{
+"id": "w267",
+"ru": "десять",
+"st": "де́сять",
+"en": "ten",
+"lvl": "A1",
+"topic": "num",
+"pic": "1F51F",
+"emoji": "🔟"
+},
+{
+"id": "w268",
+"ru": "кто",
+"st": "кто",
+"en": "who",
+"lvl": "A1",
+"topic": "ask",
+"pic": "2753",
+"emoji": "❓"
+},
+{
+"id": "w269",
+"ru": "что",
+"st": "что",
+"en": "what",
+"lvl": "A1",
+"topic": "ask",
+"pic": "2753",
+"emoji": "❓"
+},
+{
+"id": "w270",
+"ru": "где",
+"st": "где",
+"en": "where",
+"lvl": "A1",
+"topic": "ask",
+"pic": "1F4CD",
+"emoji": "📍"
+},
+{
+"id": "w271",
+"ru": "куда",
+"st": "куда́",
+"en": "where to",
+"lvl": "A1",
+"topic": "ask",
+"pic": "1F9ED",
+"emoji": "🧭"
+},
+{
+"id": "w272",
+"ru": "когда",
+"st": "когда́",
+"en": "when",
+"lvl": "A1",
+"topic": "ask",
+"pic": "1F550",
+"emoji": "🕐"
+},
+{
+"id": "w273",
+"ru": "почему",
+"st": "почему́",
+"en": "why",
+"lvl": "A1",
+"topic": "ask",
+"pic": "2754",
+"emoji": "❔"
+},
+{
+"id": "w274",
+"ru": "сколько",
+"st": "ско́лько",
+"en": "how much / many",
+"lvl": "A1",
+"topic": "ask",
+"pic": "1F522",
+"emoji": "🔢"
+},
+{
+"id": "w275",
+"ru": "путешествовать",
+"st": "путеше́ствовать",
+"en": "to travel",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F9F3",
+"emoji": "🧳"
+},
+{
+"id": "w276",
+"ru": "фотографировать",
+"st": "фотографи́ровать",
+"en": "to photograph",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F4F8",
+"emoji": "📸"
+},
+{
+"id": "w277",
+"ru": "планировать",
+"st": "плани́ровать",
+"en": "to plan",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F5FA",
+"emoji": "🗺️"
+},
+{
+"id": "w278",
+"ru": "вставать",
+"st": "встава́ть",
+"en": "to get up",
+"lvl": "A2",
+"topic": "trav",
+"pic": "23F0",
+"emoji": "⏰"
+},
+{
+"id": "w279",
+"ru": "продавать",
+"st": "продава́ть",
+"en": "to sell",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F3F7",
+"emoji": "🏷️"
+},
+{
+"id": "w280",
+"ru": "преподавать",
+"st": "преподава́ть",
+"en": "to teach",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F9D1-200D-1F3EB",
+"emoji": "🧑‍🏫"
+},
+{
+"id": "w281",
+"ru": "интересоваться",
+"st": "интересова́ться",
+"en": "to be interested in",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F50D",
+"emoji": "🔍"
+},
+{
+"id": "w282",
+"ru": "отдыхать",
+"st": "отдыха́ть",
+"en": "to rest",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F3D6",
+"emoji": "🏖️"
+},
+{
+"id": "w283",
+"ru": "паспорт",
+"st": "паспо́рт",
+"en": "passport",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F6C2",
+"emoji": "🛂"
+},
+{
+"id": "w284",
+"ru": "чемодан",
+"st": "чемода́н",
+"en": "suitcase",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F9F3",
+"emoji": "🧳"
+},
+{
+"id": "w285",
+"ru": "карта",
+"st": "ка́рта",
+"en": "map",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F5FA",
+"emoji": "🗺️"
+},
+{
+"id": "w286",
+"ru": "отпуск",
+"st": "о́тпуск",
+"en": "vacation",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F3DD",
+"emoji": "🏝️"
+},
+{
+"id": "w287",
+"ru": "пляж",
+"st": "пляж",
+"en": "beach",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F3D6",
+"emoji": "🏖️"
+},
+{
+"id": "w288",
+"ru": "страна",
+"st": "страна́",
+"en": "country",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F30D",
+"emoji": "🌍"
+},
+{
+"id": "w289",
+"ru": "художник",
+"st": "худо́жник",
+"en": "artist",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F468-200D-1F3A8",
+"emoji": "👨‍🎨"
+},
+{
+"id": "w290",
+"ru": "менеджер",
+"st": "ме́неджер",
+"en": "manager",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F454",
+"emoji": "👔"
+},
+{
+"id": "w291",
+"ru": "блогер",
+"st": "бло́гер",
+"en": "blogger",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F933",
+"emoji": "🤳"
+},
+{
+"id": "w292",
+"ru": "картина",
+"st": "карти́на",
+"en": "painting",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F5BC",
+"emoji": "🖼️"
+},
+{
+"id": "w293",
+"ru": "выходные",
+"st": "выходны́е",
+"en": "weekend",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F6CB",
+"emoji": "🛋️"
+},
+{
+"id": "w294",
+"ru": "совет",
+"st": "сове́т",
+"en": "advice",
+"lvl": "A2",
+"topic": "trav",
+"pic": "1F4AC",
+"emoji": "💬"
+},
+{
+"id": "w295",
+"ru": "болеть",
+"st": "боле́ть",
+"en": "to be ill / hurt",
+"lvl": "A2",
+"topic": "health",
+"pic": "1F912",
+"emoji": "🤒"
+},
+{
+"id": "w296",
+"ru": "температура",
+"st": "температу́ра",
+"en": "fever",
+"lvl": "A2",
+"topic": "health",
+"pic": "1F321",
+"emoji": "🌡️"
+},
+{
+"id": "w297",
+"ru": "лекарство",
+"st": "лека́рство",
+"en": "medicine",
+"lvl": "A2",
+"topic": "health",
+"pic": "1F48A",
+"emoji": "💊"
+},
+{
+"id": "w298",
+"ru": "здоровый",
+"st": "здоро́вый",
+"en": "healthy",
+"lvl": "A2",
+"topic": "health",
+"pic": "1F4AA",
+"emoji": "💪"
+},
+{
+"id": "w300",
+"ru": "спорт",
+"st": "спорт",
+"en": "sport",
+"lvl": "A2",
+"topic": "health",
+"pic": "1F3C5",
+"emoji": "🏅"
+},
+{
+"id": "w301",
+"ru": "заниматься",
+"st": "занима́ться",
+"en": "to do / engage in",
+"lvl": "A2",
+"topic": "health",
+"pic": "1F3CB",
+"emoji": "🏋️"
+},
+{
+"id": "w302",
+"ru": "работа",
+"st": "рабо́та",
+"en": "work / job",
+"lvl": "A2",
+"topic": "work",
+"pic": "1F4BC",
+"emoji": "💼"
+},
+{
+"id": "w303",
+"ru": "офис",
+"st": "о́фис",
+"en": "office",
+"lvl": "A2",
+"topic": "work",
+"pic": "1F3E2",
+"emoji": "🏢"
+},
+{
+"id": "w304",
+"ru": "коллега",
+"st": "колле́га",
+"en": "colleague",
+"lvl": "A2",
+"topic": "work",
+"pic": "1F9D1-200D-1F4BC",
+"emoji": "🧑‍💼"
+},
+{
+"id": "w305",
+"ru": "встреча",
+"st": "встре́ча",
+"en": "meeting",
+"lvl": "A2",
+"topic": "work",
+"pic": "1F91D",
+"emoji": "🤝"
+},
+{
+"id": "w307",
+"ru": "вопрос",
+"st": "вопро́с",
+"en": "question",
+"lvl": "A1",
+"topic": "class",
+"pic": "2753",
+"emoji": "❓"
+},
+{
+"id": "w308",
+"ru": "ответ",
+"st": "отве́т",
+"en": "answer",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F4AC",
+"emoji": "💬"
+},
+{
+"id": "w309",
+"ru": "звонок",
+"st": "звоно́к",
+"en": "call",
+"lvl": "A2",
+"topic": "work",
+"pic": "1F4F2",
+"emoji": "📲"
+},
+{
+"id": "w310",
+"ru": "экзамен",
+"st": "экза́мен",
+"en": "exam",
+"lvl": "A2",
+"topic": "work",
+"pic": "1F4DD",
+"emoji": "📝"
+},
+{
+"id": "w311",
+"ru": "урок",
+"st": "уро́к",
+"en": "lesson",
+"lvl": "A2",
+"topic": "work",
+"pic": "1F4DA",
+"emoji": "📚"
+},
+{
+"id": "w312",
+"ru": "слово",
+"st": "сло́во",
+"en": "word",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F524",
+"emoji": "🔤"
+},
+{
+"id": "w313",
+"ru": "предложение",
+"st": "предложе́ние",
+"en": "sentence",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F4C4",
+"emoji": "📄"
+},
+{
+"id": "w314",
+"ru": "упражнение",
+"st": "упражне́ние",
+"en": "exercise",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F4DD",
+"emoji": "📝"
+},
+{
+"id": "w315",
+"ru": "домашнее задание",
+"st": "дома́шнее зада́ние",
+"en": "homework",
+"lvl": "A2",
+"topic": "work",
+"pic": "1F4D2",
+"emoji": "📒"
+},
+{
+"id": "w316",
+"ru": "рано",
+"st": "ра́но",
+"en": "early",
+"lvl": "A2",
+"topic": "time",
+"pic": "1F304",
+"emoji": "🌄"
+},
+{
+"id": "w317",
+"ru": "поздно",
+"st": "по́здно",
+"en": "late",
+"lvl": "A2",
+"topic": "time",
+"pic": "1F303",
+"emoji": "🌃"
+},
+{
+"id": "w318",
+"ru": "всегда",
+"st": "всегда́",
+"en": "always",
+"lvl": "A2",
+"topic": "time",
+"pic": "267E",
+"emoji": "♾️"
+},
+{
+"id": "w319",
+"ru": "обычно",
+"st": "обы́чно",
+"en": "usually",
+"lvl": "A2",
+"topic": "time",
+"pic": "1F501",
+"emoji": "🔁"
+},
+{
+"id": "w320",
+"ru": "иногда",
+"st": "иногда́",
+"en": "sometimes",
+"lvl": "A2",
+"topic": "time",
+"pic": "1F3B2",
+"emoji": "🎲"
+},
+{
+"id": "w321",
+"ru": "часто",
+"st": "ча́сто",
+"en": "often",
+"lvl": "A2",
+"topic": "time",
+"pic": "1F502",
+"emoji": "🔂"
+},
+{
+"id": "w322",
+"ru": "редко",
+"st": "ре́дко",
+"en": "rarely",
+"lvl": "A2",
+"topic": "time",
+"pic": "1F40C",
+"emoji": "🐌"
+},
+{
+"id": "w323",
+"ru": "никогда",
+"st": "никогда́",
+"en": "never",
+"lvl": "A2",
+"topic": "time",
+"pic": "1F6AB",
+"emoji": "🚫"
+},
+{
+"id": "w324",
+"ru": "Послушайте",
+"st": "Послу́шайте",
+"en": "listen",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F442",
+"emoji": "👂"
+},
+{
+"id": "w325",
+"ru": "Прочитайте",
+"st": "Прочита́йте",
+"en": "read",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F4D6",
+"emoji": "📖"
+},
+{
+"id": "w326",
+"ru": "Напишите",
+"st": "Напиши́те",
+"en": "write",
+"lvl": "A1",
+"topic": "class",
+"pic": null,
+"emoji": "✍️"
+},
+{
+"id": "w327",
+"ru": "Скажите",
+"st": "Скажи́те",
+"en": "say",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F5E3",
+"emoji": "🗣️"
+},
+{
+"id": "w328",
+"ru": "Расскажите",
+"st": "Расскажи́те",
+"en": "tell (about something)",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F5E3",
+"emoji": "🗣️"
+},
+{
+"id": "w329",
+"ru": "Ответьте на вопросы",
+"st": "Отве́тьте на вопро́сы",
+"en": "answer the questions",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F4AC",
+"emoji": "💬"
+},
+{
+"id": "w330",
+"ru": "Выберите",
+"st": "Вы́берите",
+"en": "choose",
+"lvl": "A1",
+"topic": "class",
+"pic": null,
+"emoji": "☑️"
+},
+{
+"id": "w331",
+"ru": "Вставьте",
+"st": "Вста́вьте",
+"en": "fill in (put in)",
+"lvl": "A1",
+"topic": "class",
+"pic": "270F",
+"emoji": "✏️"
+},
+{
+"id": "w332",
+"ru": "Дополните",
+"st": "Дополни́те",
+"en": "complete",
+"lvl": "A1",
+"topic": "class",
+"pic": "270F",
+"emoji": "✏️"
+},
+{
+"id": "w333",
+"ru": "Соедините",
+"st": "Соедини́те",
+"en": "match (connect)",
+"lvl": "A1",
+"topic": "class",
+"pic": null,
+"emoji": "🔗"
+},
+{
+"id": "w334",
+"ru": "Используйте",
+"st": "Испо́льзуйте",
+"en": "use",
+"lvl": "A1",
+"topic": "class",
+"pic": null,
+"emoji": "🧰"
+},
+{
+"id": "w335",
+"ru": "в правильной форме",
+"st": "в пра́вильной фо́рме",
+"en": "in the correct form",
+"lvl": "A1",
+"topic": "class",
+"pic": null,
+"emoji": "✔️"
+},
+{
+"id": "w336",
+"ru": "задание",
+"st": "зада́ние",
+"en": "task",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F4DD",
+"emoji": "📝"
+},
+{
+"id": "w337",
+"ru": "образец",
+"st": "образе́ц",
+"en": "model (worked example)",
+"lvl": "A1",
+"topic": "class",
+"pic": null,
+"emoji": "📋"
+},
+{
+"id": "w338",
+"ru": "текст",
+"st": "текст",
+"en": "text",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F4C4",
+"emoji": "📄"
+},
+{
+"id": "w339",
+"ru": "диалог",
+"st": "диало́г",
+"en": "dialogue",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F4AC",
+"emoji": "💬"
+},
+{
+"id": "w340",
+"ru": "глагол",
+"st": "глаго́л",
+"en": "verb",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F524",
+"emoji": "🔤"
+},
+{
+"id": "w341",
+"ru": "вариант",
+"st": "вариа́нт",
+"en": "option",
+"lvl": "A1",
+"topic": "class",
+"pic": null,
+"emoji": "☑️"
+},
+{
+"id": "w342",
+"ru": "правильно",
+"st": "пра́вильно",
+"en": "correct",
+"lvl": "A1",
+"topic": "class",
+"pic": "2705",
+"emoji": "✅"
+},
+{
+"id": "w343",
+"ru": "неправильно",
+"st": "непра́вильно",
+"en": "wrong",
+"lvl": "A1",
+"topic": "class",
+"pic": "274C",
+"emoji": "❌"
+},
+{
+"id": "w344",
+"ru": "дальше",
+"st": "да́льше",
+"en": "next",
+"lvl": "A1",
+"topic": "class",
+"pic": "27A1",
+"emoji": "➡️"
+},
+{
+"id": "w345",
+"ru": "проверить",
+"st": "прове́рить",
+"en": "to check",
+"lvl": "A1",
+"topic": "class",
+"pic": "1F50D",
+"emoji": "🔍"
+}
+]
