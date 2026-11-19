@@ -7,8 +7,19 @@ import { go } from './router.js';
 import { ins, lbl, gloss } from './cue.js';
 
 export let VOCAB = [];
+/** Frequency list (corpus order). Entries with `same` point at a course word; the rest join VOCAB as their own cards. */
+export let FREQ = [];
 export const byId = id => VOCAB.find(w => w.id === id) || store.get().custom?.[id];
-export async function loadVocab() { if (!VOCAB.length) VOCAB = await json('data/vocab.json'); return VOCAB; }
+export async function loadVocab() {
+  if (VOCAB.length) return VOCAB;
+  const [v, f] = await Promise.all([json('data/vocab.json'), json('data/freq.json').catch(() => [])]);
+  const rank = Object.fromEntries(f.filter(e => e.same).map(e => [e.same, e.rank]));
+  FREQ = f;
+  VOCAB = [...v.map(w => (rank[w.id] ? { ...w, rank: rank[w.id] } : w)), ...f.filter(e => !e.same).map(e => ({ ...e, topic: 'f:' + e.pos, lvl: 'freq' }))];
+  return VOCAB;
+}
+/** The card id that a frequency entry is learned under. */
+export const freqCard = e => e.same || e.id;
 
 /** Several words share one picture, so options must differ by picture AND by spelling. */
 export const picKey = w => w.pic || w.emoji || w.id;
@@ -34,13 +45,14 @@ function options(w) {
   return shuffle([w, ...d]);
 }
 
-/** New words: the current unit's topics first, then earlier units', then anything unseen. */
+/** New words: the current unit's topics first, then earlier units', then the most common unseen words (corpus order). */
 export function pickNew(n, topics = [], earlier = []) {
   const seen = store.get().cards, fresh = VOCAB.filter(w => !seen[w.id]);
-  const lvl = w => (w.lvl === 'A1' ? 0 : 1);
-  const tiers = [fresh.filter(w => topics.includes(w.topic)), fresh.filter(w => earlier.includes(w.topic)), fresh];
+  const lvl = w => (w.lvl === 'A1' ? 0 : w.lvl === 'freq' ? 2 : 1);
+  const common = fresh.filter(w => w.rank).sort((a, b) => a.rank - b.rank);
+  const tiers = [fresh.filter(w => topics.includes(w.topic)), fresh.filter(w => earlier.includes(w.topic)), common, fresh];
   const out = [];
-  for (const t of tiers) for (const w of t.sort((a, b) => lvl(a) - lvl(b))) { if (out.length >= n) return out; if (!out.includes(w)) out.push(w); }
+  for (const [i, t] of tiers.entries()) for (const w of i === 2 ? t : t.sort((a, b) => lvl(a) - lvl(b))) { if (out.length >= n) return out; if (!out.includes(w)) out.push(w); }
   return out;
 }
 export const dueWords = (max = 15) => shuffle(dueIds().map(byId).filter(Boolean)).slice(0, max);
@@ -158,6 +170,9 @@ export function choose(el, opts, correctId, word) {
   });
 }
 
+/** Grammar point of a drill: its own tag, else its unit's (verb units have no case). */
+const UNIT_TAG = { g02: 'nom-pl', g03: 'pres', g06: 'past' };
+export const drillTag = (d, u) => d.tag || UNIT_TAG[u?.id] || u?.case || null;
 /** One grammar gap. `u` = the unit (for the label). */
 export const stepDrill = (d, u, out) => async (el, ctx) => {
   const ru = /[А-Яа-яЁё]/.test(d.a[0]), gap = d.q.includes('___');
@@ -176,11 +191,13 @@ export const stepDrill = (d, u, out) => async (el, ctx) => {
   inp.classList.add(good ? 'ok' : 'bad'); inp.readOnly = true; el.querySelector('.actions').hidden = true;
   say(d.say || d.q.replace('___', d.a[0]).replace(/\(.*?\)/g, ''));
   ctx?.score(good); if (out) out.right += good ? 1 : 0;
+  const tag = drillTag(d, u); if (tag && !out?.retry) store.gramTally(tag, good);
+  if (!good && out?.again) ctx?.again(stepDrill(d, u, { right: 0, retry: true }));   // missed: once more at the end (not counted twice)
   await feedback(el, good, good ? ok() : `${no()} ${ans()} <strong class="${ru ? 'ru' : ''}">${esc(d.a[0])}</strong>. <span class="muted">${ruHtml(d.hint)}</span>`);
 };
 
 /** A question from the tutor's sheet: answer aloud, reveal, mark honestly. */
-export const stepTutor = (item, sheet) => async (el, ctx) => {
+export const stepTutor = (item, sheet, tag) => async (el, ctx) => {
   el.innerHTML = `<div class="task" style="text-align:left"><div class="kind">From your tutor · ${esc(sheet)}</div>
     ${item.prompt ? `<p class="muted small">${gloss(tidy(item.prompt))}</p>` : ''}<p class="prompt">${tidy(item.q)}</p>
     ${item.options?.length ? `<p class="muted">${item.options.map(o => ruHtml(o)).join(' / ')}</p>` : ''}
@@ -191,7 +208,7 @@ export const stepTutor = (item, sheet) => async (el, ctx) => {
   await once(el, '#show');
   el.querySelector('#ans').hidden = false; el.querySelector('#show').parentElement.hidden = true; el.querySelector('.rate').hidden = false;
   const ok = await new Promise(r => el.querySelectorAll('[data-ok]').forEach(b => b.addEventListener('click', () => r(b.dataset.ok === '1'), { once: true })));
-  ctx?.score(ok); store.markDone(item.key, (store.get().done[item.key] || 0) + 1);
+  ctx?.score(ok); if (tag) store.gramTally(tag, ok); store.markDone(item.key, (store.get().done[item.key] || 0) + 1);
 };
 
 /** A tutor question works as text only if it has real Russian in it and doesn't point at a picture. */
@@ -210,11 +227,11 @@ export async function recency() {
   return Object.fromEntries(Object.keys(led.files).map((k, i) => [k, i]));
 }
 
-/** Up to n answered questions from the most recent tutor sheets, least-practised first. */
-export async function tutorItems(n = 3) {
+/** Up to n answered questions from the most recent tutor sheets, least-practised first. `only`: limit to these sheet stems. */
+export async function tutorItems(n = 3, only = null) {
   const idx = await json('data/weeks/index.json').catch(() => []);
   const order = await recency();
-  const files = idx.flatMap(g => g.files.map(f => ({ ...f, key: g.key }))).filter(f => f.status !== 'pending' && f.items);
+  const files = idx.flatMap(g => g.files.map(f => ({ ...f, key: g.key }))).filter(f => f.status !== 'pending' && f.items && (!only || only.includes(f.stem)));
   files.sort((a, b) => (order[b.stem] ?? -1) - (order[a.stem] ?? -1));
   const done = store.get().done, out = [];
   for (const f of files) {
@@ -226,4 +243,11 @@ export async function tutorItems(n = 3) {
     if (out.length >= n) break;
   }
   return out;
+}
+
+/** Tutor questions for one grammar point: from the sheets whose sentences show that point most (see data/input.json). */
+export async function tutorItemsFor(tag, n = 3) {
+  const inp = await json('data/input.json').catch(() => null);
+  const stems = Object.entries(inp?.sheets || {}).filter(([, c]) => (c[tag] || 0) >= 3).map(([k]) => k);
+  return stems.length ? tutorItems(n, stems) : [];
 }

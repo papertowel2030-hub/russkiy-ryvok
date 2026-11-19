@@ -6,7 +6,7 @@ const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
 const getMeta = () => (meta ||= fetch('data/vault.json').then(r => r.ok ? r.json() : null).catch(() => null));
 const saved = () => { try { return localStorage.getItem(KEY); } catch { return null; } };
 
-export const isVaulted = p => /^(data\/(weeks|tutor)\/|assets\/tutor\/)/.test(p);
+export const isVaulted = p => /^(data\/(weeks|tutor)\/|assets\/tutor\/|data\/input\.json$)/.test(p);
 
 /** Try a code. True if it opens the vault (and remembers it on this device). */
 export async function unlock(code) {

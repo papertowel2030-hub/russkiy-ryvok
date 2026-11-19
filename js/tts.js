@@ -15,3 +15,14 @@ export function say(text, rate = 0.85) {
   speechSynthesis.speak(u);
   return true;
 }
+/** Speak and resolve when finished (or at once if speech is unavailable). */
+export function sayWait(text, rate = 0.85) {
+  return new Promise(res => {
+    if (!supported()) return res(false);
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text.replace(/\u0301/g, ''));
+    u.lang = 'ru-RU'; u.rate = rate; if (voice) u.voice = voice;
+    u.onend = () => res(true); u.onerror = () => res(false);
+    speechSynthesis.speak(u);
+  });
+}

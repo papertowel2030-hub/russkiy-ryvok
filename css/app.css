@@ -255,3 +255,30 @@ details.sheet h3{margin-top:20px}
 .btn .two{display:flex;flex-direction:column;align-items:center;line-height:1.2}
 .btn .two small{font-weight:400;font-size:.78rem;opacity:.8}
 .btn .st{color:inherit}
+
+/* Segmented switch (Words) */
+.seg{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:16px;background:var(--surface)}
+.seg a{flex:1;text-align:center;padding:10px 8px;min-height:44px;text-decoration:none;color:var(--ink-2);font-size:.95rem}
+.seg a+a{border-left:1px solid var(--line)}
+.seg a[aria-selected=true]{color:var(--ink);font-weight:700;background:var(--sunk)}
+.word .rank{flex:none;width:2.6em;text-align:right;color:var(--ink-3);font-size:.82rem;font-variant-numeric:tabular-nums}
+.tag-weak{display:inline-block;margin-left:6px;font-size:.75rem;font-weight:700;color:var(--accent);border:1px solid currentColor;border-radius:999px;padding:0 7px;vertical-align:1px}
+
+/* Read and listen */
+.in-bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px;position:sticky;top:0;z-index:5;background:var(--paper);padding:8px 0}
+.in-bar .btn svg{width:18px;height:18px}
+.seg.sm{margin:0;flex:1;min-width:200px}
+.seg.sm a{min-height:40px;padding:8px 4px;font-size:.9rem}
+.in-list{display:grid;gap:10px}
+.in-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.in-card.now{border-color:var(--accent)}
+.in-ru{font-size:1.25rem;line-height:1.55;margin:0 0 8px}
+.in-ru .w{cursor:pointer;border-radius:3px}
+.in-ru .w:hover{background:var(--sunk)}
+.in-ru .hl{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.in-ru .hl .st{color:inherit}
+.in-foot{display:flex;align-items:center;gap:10px}
+.in-foot .btn{min-height:36px;padding:0 10px}
+.in-foot .btn svg{width:18px;height:18px}
+.in-card.read .in-foot .faint::before{content:"✓ ";color:var(--ok)}
+.in-gl{margin-top:10px;padding-top:10px;border-top:1px solid var(--line);color:var(--ink-2)}

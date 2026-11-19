@@ -65,8 +65,8 @@ function sheet(f, main) {
 }
 
 /** Shared build: the tutor's sheets need a code, asked once per device. */
-function lockScreen(main, then) {
-  main.innerHTML = `<div class="top"><h1>Tutor</h1></div>
+export function lockScreen(main, then, title = 'Tutor') {
+  main.innerHTML = `<div class="top"><h1>${title}</h1></div>
   <p class="lead">These are a tutor's private sheets. Enter the code to open them on this device.</p>
   <form id="lk" class="actions stack" style="max-width:360px"><input id="code" class="input" type="password" inputmode="numeric" autocomplete="off" placeholder="Code" aria-label="Code">
   <button class="btn primary block big">Open</button><p id="msg" class="small muted" role="status"></p></form>`;

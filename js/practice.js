@@ -2,11 +2,23 @@
 import { esc, ruHtml, sample, shuffle, icon, json } from './ui.js';
 import * as store from './store.js';
 import { weakIds } from './srs.js';
-import { loadVocab, VOCAB, byId, dueWords, runSteps, stepReview, stepQuiz } from './session.js';
+import { loadVocab, VOCAB, byId, dueWords, pickNew, runSteps, stepReview, stepQuiz, stepLearn, stepDrill, stepTutor, drillTag, tutorItemsFor } from './session.js';
+import { loadGrammar } from './grammar.js';
 import { say } from './tts.js';
 
-export async function view(main, mode) {
+/** Grammar points for review, with the unit that explains each. */
+export const POINTS = [
+  ['prep', 'Prepositional', 'где? о ком? · в / на / о', 'g04'], ['acc', 'Accusative', 'кого? что? куда?', 'g05'],
+  ['gen', 'Genitive', 'нет, у, из · кого? чего?', 'g07'], ['dat', 'Dative', 'кому? · к', 'g09'],
+  ['ins', 'Instrumental', 'с кем? чем? кем?', 'g10'], ['nom-pl', 'Nominative plural', 'столы́, кни́ги, о́кна', 'g02'],
+  ['pres', 'Present tense', 'чита́ю, говори́шь…', 'g03'], ['past', 'Past tense', 'чита́л, чита́ла, чита́ли', 'g06'],
+];
+const CASES = ['prep', 'acc', 'gen', 'dat', 'ins'];
+
+export async function view(main, mode, sub) {
   await loadVocab();
+  if (mode === 'grammar') return sub ? review(main, sub) : grammarList(main);
+  if (mode === 'input') return (await import('./input.js')).view(main, sub);
   if (mode) return start(main, mode);
   const due = dueWords(99).length, weak = weakIds(10).length, known = Object.keys(store.get().cards).length;
   const row = (k, t, s, meta = '', off = false) => off
@@ -14,6 +26,9 @@ export async function view(main, mode) {
     : `<a class="item" href="#/practice/${k}"><span class="body"><span class="title">${t}</span><span class="sub">${s}</span></span>${meta ? `<span class="meta">${meta}</span>` : ''}<span class="chev">${icon('chev')}</span></a>`;
   main.innerHTML = `<div class="top"><h1>Practice</h1></div><p class="lead">Short extra rounds. Pick one.</p>
   <div class="list">
+    ${row('grammar', 'Grammar review', 'Pick a case or verb form and practise it')}
+    ${row('input', 'Read and listen', "Many example sentences from your tutor's sheets, one grammar point at a time")}
+    ${row('common', 'Common words', 'The next 5 of the 2000 most common words')}
     ${row('review', 'Review words', due ? 'Words that are due now' : 'Nothing is due right now', due || '', !due)}
     ${row('hard', 'Hard words', weak ? 'Words you have missed before' : 'No hard words yet', weak || '', !weak)}
     ${row('listen', 'Listening', known >= 4 ? 'Hear a word, choose its meaning · 10 words' : 'Learn a few words first', '', known < 4)}
@@ -27,6 +42,10 @@ async function start(main, mode) {
   if (mode === 'hard') steps = weakIds(10).map(byId).filter(Boolean).map((w, i) => stepQuiz(w, i % 2 ? 'type' : 'pic'));
   if (mode === 'listen') steps = sample(Object.keys(store.get().cards).map(byId).filter(w => w && VOCAB.includes(w)), 10).map(w => stepQuiz(w, 'listen', false));
   if (mode === 'read') return reading(main);
+  if (mode === 'common') {
+    const ws = pickNew(5, [], []).filter(w => w.rank);
+    steps = [...ws.map(stepLearn), ...ws.map((w, i) => stepQuiz(w, ['pic', 'listen', 'type'][i % 3]))];
+  }
   if (!steps.length) { location.hash = '#/practice'; return; }
   const sum = await runSteps(main, steps, { exitTo: 'practice' });
   if (sum) finish(main, sum);
@@ -63,4 +82,42 @@ async function reading(main) {
   if (!sum) return;
   store.markDone('r:' + r.title, (done['r:' + r.title] || 0) + 1);
   finish(main, sum);
+}
+
+const pctOf = g => (g?.total ? Math.round((g.right / g.total) * 100) : null);
+const weak = g => g && g.total >= 8 && g.right / g.total < 0.7;
+
+async function grammarList(main) {
+  const gram = store.get().gram || {};
+  const pts = POINTS.slice().sort((a, b) => weak(gram[b[0]]) - weak(gram[a[0]]));
+  const row = ([k, t, s]) => {
+    const g = gram[k], p = pctOf(g);
+    const meta = p === null ? 'Not practised' : `${p} % · ${g.last === store.today() ? 'today' : new Date(g.last).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}`;
+    return `<a class="item" href="#/practice/grammar/${k}"><span class="body"><span class="title">${t}${weak(g) ? ' <span class="tag-weak">Needs work</span>' : ''}</span><span class="sub ru">${ruHtml(s)}</span></span><span class="meta">${meta}</span><span class="chev">${icon('chev')}</span></a>`;
+  };
+  main.innerHTML = `<a class="back" href="#/practice">← Practice</a><div class="top"><h1>Grammar review</h1></div>
+  <p class="lead">12 questions on one point. Practise the ones you find hard as often as you like. Missed questions come back at the end of the round.</p>
+  <div class="list">${pts.map(row).join('')}<a class="item" href="#/practice/grammar/mixed"><span class="body"><span class="title">All cases mixed</span><span class="sub">Prepositional, accusative, genitive, dative, instrumental</span></span><span class="chev">${icon('chev')}</span></a></div>
+  <p class="small muted" style="margin-top:14px">Answer forms are checked against two dictionaries (OpenRussian.org and OpenCorpora).</p>`;
+}
+
+async function review(main, tag) {
+  const pt = POINTS.find(p => p[0] === tag), tags = tag === 'mixed' ? CASES : [tag];
+  if (!pt && tag !== 'mixed') { location.hash = '#/practice/grammar'; return; }
+  const [bank, gs] = await Promise.all([json('data/drills.json'), loadGrammar()]);
+  const unitDrills = gs.flatMap(u => u.drills.map(d => ({ d, u }))).filter(x => tags.includes(drillTag(x.d, x.u)));
+  const label = { id: 'rev', en: pt ? pt[1] : 'All cases' };
+  const tutor = tag === 'mixed' ? [] : await tutorItemsFor(tag, 3);
+  const pool = shuffle([...unitDrills, ...shuffle(bank.filter(d => tags.includes(d.tag))).map(d => ({ d, u: label }))]).slice(0, 12 - tutor.length);
+  const out = { right: 0, again: true };
+  const steps = [...pool.map(x => stepDrill(x.d, x.u, out)), ...tutor.map(t => stepTutor(t.item, t.title, tag))];
+  const sum = await runSteps(main, steps, { exitTo: 'practice/grammar' });
+  if (!sum) return;
+  store.finishSession();
+  const unit = pt && gs.find(u => u.id === pt[3]);
+  main.innerHTML = `<div class="done"><div class="mark">✓</div><h1>Round done</h1><p class="muted">${sum.right} of ${sum.total} answers correct, including the repeats.</p>
+   <div class="actions stack" style="max-width:360px;margin:24px auto 0"><button class="btn primary block big" id="re">Another round</button>
+   ${unit ? `<a class="btn secondary block" href="#/course/${unit.id}">Read the explanation: ${esc(unit.en)}</a>` : ''}
+   <a class="btn text" href="#/practice/grammar">Back to Grammar review</a></div></div>`;
+  main.querySelector('#re').onclick = () => review(main, tag);
 }

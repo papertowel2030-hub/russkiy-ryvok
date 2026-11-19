@@ -1,6 +1,6 @@
 // Progress store: localStorage with JSON export/import. All reads/writes are try/catch-wrapped.
 const KEY = 'rr.v1';
-const blank = () => ({ v: 1, cards: {}, xp: 0, streak: 0, lastDay: null, days: {}, settings: { theme: 'auto', voice: true, goal: 30, onboarded: false, startUnit: 0 }, done: {}, started: null });
+const blank = () => ({ v: 1, cards: {}, xp: 0, streak: 0, lastDay: null, days: {}, settings: { theme: 'auto', voice: true, goal: 30, onboarded: false, startUnit: 0 }, done: {}, gram: {}, started: null });
 let state = blank();
 const subs = new Set();
 
@@ -42,6 +42,8 @@ export function tally(ok) { const d = day(); d.total++; if (ok) d.right++; save(
 /** Active study time, in seconds (called by the activity heartbeat). */
 export function addTime(sec) { day().minutes = Math.round((day().minutes + sec / 60) * 100) / 100; save(); }
 export function finishSession() { day().sessions++; touch(); save(); }
+/** Accuracy per grammar point (prep, acc, pres…), for Grammar review. */
+export function gramTally(tag, ok) { const g = (state.gram[tag] ||= { right: 0, total: 0, last: null }); g.total++; if (ok) g.right++; g.last = today(); save(); }
 export function markDone(key, val = true) { state.done[key] = val; save(); }
 export function setSetting(k, v) { state.settings[k] = v; save(); }
 
@@ -56,7 +58,7 @@ function clean(o) {
     ...b, ...o,
     cards: o.cards,
     settings: { ...b.settings, ...(isObj(o.settings) ? o.settings : {}) },
-    days: isObj(o.days) ? o.days : {}, done: isObj(o.done) ? o.done : {}, custom: isObj(o.custom) ? o.custom : {},
+    days: isObj(o.days) ? o.days : {}, done: isObj(o.done) ? o.done : {}, gram: isObj(o.gram) ? o.gram : {}, custom: isObj(o.custom) ? o.custom : {},
     xp: Number.isFinite(o.xp) ? o.xp : 0, streak: Number.isFinite(o.streak) ? o.streak : 0,
     lastDay: isDay(o.lastDay) ? o.lastDay : null, started: isDay(o.started) ? o.started : null,
   };

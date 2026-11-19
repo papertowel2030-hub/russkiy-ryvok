@@ -12,8 +12,8 @@ store.load(); theme();
 route('welcome', async (m, step) => (await import('./onboarding.js')).view(m, step));
 route('today', async m => (await import('./today.js')).view(m));
 route('course', async (m, id) => { const c = await import('./grammar.js'); return id ? c.viewUnit(m, id) : c.viewList(m); });
-route('words', async m => (await import('./words.js')).view(m));
-route('practice', async (m, mode) => (await import('./practice.js')).view(m, mode));
+route('words', async (m, mode) => (await import('./words.js')).view(m, mode));
+route('practice', async (m, ...a) => (await import('./practice.js')).view(m, ...a));
 route('tutor', async (m, ...a) => (await import('./tutor.js')).view(m, ...a));
 route('progress', async m => (await import('./progress.js')).view(m));
 
