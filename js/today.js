@@ -35,7 +35,7 @@ export async function view(main) {
   const learned = Object.values(st.cards).filter(isLearned).length, wk = weekDots();
   const parts = [!lessonSeen(p.u) && `a short explanation`, p.due.length && `${p.due.length} ${p.due.length === 1 ? 'word' : 'words'} to review`,
     p.fresh.length && `${p.fresh.length} new ${p.fresh.length === 1 ? 'word' : 'words'}`,
-    `${p.drills.length} ${p.u.id === 'g00' ? 'reading' : p.u.id === 'g00c' ? 'word' : 'grammar'} questions`, p.tutor.length && `${p.tutor.length} from your tutor's sheet`].filter(Boolean);
+    `${p.drills.length} ${p.u.id === 'g00' ? 'reading' : p.u.id === 'g00c' ? 'word' : 'grammar'} questions`, p.tutor.length && `${p.tutor.length} from Valeria's sheet`].filter(Boolean);
   main.innerHTML = `<div class="home"><div class="top"><span class="date">${new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</span><a href="#/progress">Progress</a></div>
    <div class="next">${doneToday
     ? `<div class="label">Today</div><h2>Today's session is done</h2><p class="what">Words come back for review when they are due. Tomorrow's session is ready tomorrow.</p><button class="btn secondary block big" id="go">One more round · ${p.mins} min</button>`

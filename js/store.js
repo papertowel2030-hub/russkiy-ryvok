@@ -51,7 +51,7 @@ const isObj = x => !!x && typeof x === 'object' && !Array.isArray(x);
 const isDay = x => typeof x === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(x);
 /** Validate a stored/imported state and fill gaps with defaults; throws when the shape is unusable. */
 function clean(o) {
-  if (!isObj(o) || o.v !== 1 || !isObj(o.cards)) throw new Error('Not a Русский Рывок backup');
+  if (!isObj(o) || o.v !== 1 || !isObj(o.cards)) throw new Error('Not a Мечта backup');
   const b = blank();
   for (const c of Object.values(o.cards)) if (!isObj(c) || !['s', 'd', 'reps', 'due'].every(k => Number.isFinite(c[k]))) throw new Error('Backup has damaged cards');
   return {
@@ -72,7 +72,7 @@ export function streak() {
 export function exportJSON() { return JSON.stringify(state, null, 1); }
 export function importJSON(text) {
   let o;
-  try { o = JSON.parse(text); } catch (e) { throw new Error('Not a Русский Рывок backup'); }
+  try { o = JSON.parse(text); } catch (e) { throw new Error('Not a Мечта backup'); }
   state = clean(o);
   if (!state.started) state.started = today();
   save();

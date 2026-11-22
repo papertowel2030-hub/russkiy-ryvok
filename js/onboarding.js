@@ -11,7 +11,7 @@ const SCREENS = [
     <div class="actions stack"><button class="btn primary block big" data-next>Continue</button><button class="btn text" data-say="Привет">Hear it</button></div>`,
   () => `<div class="step">2 of 3</div><h1>How a day works</h1>
     <ol><li>Open <b>Today</b> and press <b>Start</b>.</li><li>About ten minutes: review old words, learn a few new ones, answer some grammar questions.</li><li>Stop whenever you need to. Your answers are saved.</li></ol>
-    <p class="small">Want more? <b>Course</b> has every unit, <b>Practice</b> has extra rounds, <b>Tutor</b> has your tutor's sheets.</p>
+    <p class="small">Want more? <b>Course</b> has every unit, <b>Practice</b> has extra rounds, <b>Valeria</b> has her lesson sheets.</p>
     <div class="actions stack"><button class="btn primary block big" data-next>Continue</button></div>`,
   () => `<div class="step">3 of 3</div><h1>Can you read this?</h1>
     <div class="sample ru">${ruHtml('Москва́, ма́ма, рестора́н')}</div>

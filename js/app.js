@@ -2,9 +2,9 @@ import * as store from './store.js';
 import { route, start } from './router.js';
 import { icon } from './ui.js';
 
-const NAV = [['today', 'Today'], ['course', 'Course'], ['practice', 'Practice'], ['tutor', 'Tutor']];
+const NAV = [['today', 'Today'], ['course', 'Course'], ['practice', 'Practice'], ['tutor', 'Valeria']];
 const nav = document.getElementById('nav');
-nav.innerHTML = `<div class="brand">Русский Рывок</div>` + NAV.map(([k, t]) => `<a href="#/${k}" data-k="${k}">${icon(k)}<span>${t}</span></a>`).join('');
+nav.innerHTML = `<div class="brand">Мечта</div>` + NAV.map(([k, t]) => `<a href="#/${k}" data-k="${k}">${icon(k)}<span>${t}</span></a>`).join('');
 
 const theme = () => { const t = store.get().settings.theme; if (t === 'auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.dataset.theme = t; };
 store.load(); theme();

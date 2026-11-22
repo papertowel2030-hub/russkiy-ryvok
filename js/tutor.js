@@ -1,4 +1,4 @@
-// Tutor: the tutor's worksheets, shelved by topic, newest shelf first. Only transcribed pages show content.
+// Tutor: Valeria's worksheets, shelved by topic, newest shelf first. Only transcribed pages show content.
 import { json, esc, ruHtml, toast, icon } from './ui.js';
 import * as store from './store.js';
 import { Rating, grade } from './srs.js';
@@ -15,8 +15,9 @@ export async function view(main, key, stem) {
   const newest = g => Math.max(-1, ...g.files.map(f => order[f.stem] ?? -1));
   if (!key) {
     const shelves = idx.slice().sort((a, b) => newest(b) - newest(a));
-    main.innerHTML = `<div class="top"><h1>Tutor</h1></div>
-    <p class="lead">Your tutor's sheets, newest topic first. Answers stay hidden until you tap them.</p>
+    main.innerHTML = `<div class="top"><h1>Valeria's lessons</h1></div>
+    <p class="lead">Lesson sheets by Valeria, my Russian teacher, newest topic first. Answers stay hidden until you tap them.</p>
+    <p class="small muted">All exercises, words, texts and pictures in this section are Valeria's work, used here with gratitude for personal study.</p>
     <div class="list">${shelves.map((g, i) => {
       const unseen = g.files.filter(f => !opened(f.stem)).length;
       return `<a class="item" href="#/tutor/${g.key}"><span class="body"><span class="title">${esc(g.en || g.label)}</span><span class="sub ru">${esc(g.label)}</span></span>
@@ -26,7 +27,7 @@ export async function view(main, key, stem) {
   }
   const grp = await json(`data/weeks/${encodeURIComponent(key)}.json`);
   const files = grp.files.slice().sort((a, b) => (order[b.stem] ?? -1) - (order[a.stem] ?? -1));
-  main.innerHTML = `<a class="back" href="#/tutor">← Tutor</a><h1 style="margin-bottom:4px">${esc(grp.en || grp.label)}</h1><p class="ru muted" style="margin-bottom:20px">${esc(grp.label)}</p>`;
+  main.innerHTML = `<a class="back" href="#/tutor">← Valeria's lessons</a><h1 style="margin-bottom:4px">${esc(grp.en || grp.label)}</h1><p class="ru muted" style="margin-bottom:20px">${esc(grp.label)}</p>`;
   for (const f of files) { const c = sheet(f, main); if (f.stem === stem) { c.open = true; requestAnimationFrame(() => c.scrollIntoView()); } main.append(c); }
 }
 
@@ -55,7 +56,7 @@ function sheet(f, main) {
     const sum = await runSteps(main, items.map(it => stepTutor(it, f.title)), { exitTo: 'tutor' });
     if (!sum) return;
     main.innerHTML = `<div class="done"><div class="mark">✓</div><h1>Sheet practised</h1><p class="muted">${sum.right} of ${sum.total} right.</p>
-      <div class="actions stack" style="max-width:360px;margin:24px auto 0"><a class="btn primary block big" href="#/tutor">Back to Tutor</a></div></div>`;
+      <div class="actions stack" style="max-width:360px;margin:24px auto 0"><a class="btn primary block big" href="#/tutor">Back to Valeria's lessons</a></div></div>`;
   });
   el.addEventListener('click', e => {
     const b = e.target.closest('[data-v]'); if (b) say(f.vocab[+b.dataset.v].ru);
@@ -65,9 +66,9 @@ function sheet(f, main) {
 }
 
 /** Shared build: the tutor's sheets need a code, asked once per device. */
-export function lockScreen(main, then, title = 'Tutor') {
+export function lockScreen(main, then, title = "Valeria's lessons") {
   main.innerHTML = `<div class="top"><h1>${title}</h1></div>
-  <p class="lead">These are a tutor's private sheets. Enter the code to open them on this device.</p>
+  <p class="lead">These are Valeria's lesson sheets, shared privately. Enter the code to open them on this device.</p>
   <form id="lk" class="actions stack" style="max-width:360px"><input id="code" class="input" type="password" inputmode="numeric" autocomplete="off" placeholder="Code" aria-label="Code">
   <button class="btn primary block big">Open</button><p id="msg" class="small muted" role="status"></p></form>`;
   main.querySelector('#lk').onsubmit = async e => {

@@ -27,7 +27,7 @@ export async function view(main, mode, sub) {
   main.innerHTML = `<div class="top"><h1>Practice</h1></div><p class="lead">Short extra rounds. Pick one.</p>
   <div class="list">
     ${row('grammar', 'Grammar review', 'Pick a case or verb form and practise it')}
-    ${row('input', 'Read and listen', "Many example sentences from your tutor's sheets, one grammar point at a time")}
+    ${row('input', 'Read and listen', "Many example sentences from Valeria's lesson sheets, one grammar point at a time")}
     ${row('common', 'Common words', 'The next 5 of the 2000 most common words')}
     ${row('review', 'Review words', due ? 'Words that are due now' : 'Nothing is due right now', due || '', !due)}
     ${row('hard', 'Hard words', weak ? 'Words you have missed before' : 'No hard words yet', weak || '', !weak)}

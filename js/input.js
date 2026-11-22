@@ -22,10 +22,10 @@ function list(main, { sentences }) {
     const es = k === 'all' ? sentences : sentences.filter(e => e.tags.includes(k)), read = es.filter(isRead).length;
     return es.length
       ? `<a class="item" href="#/practice/input/${k}"><span class="body"><span class="title">${t}</span><span class="sub">${es.length} sentences · ${read} read</span></span><span class="chev">${icon('chev')}</span></a>`
-      : `<div class="item later"><span class="body"><span class="title">${t}</span><span class="sub">No tutor sentences yet${s ? '. They appear as new sheets are added.' : ''}</span></span></div>`;
+      : `<div class="item later"><span class="body"><span class="title">${t}</span><span class="sub">No sentences from Valeria yet${s ? '. They appear as new sheets are added.' : ''}</span></span></div>`;
   };
   main.innerHTML = `<a class="back" href="#/practice">← Practice</a><div class="top"><h1>Read and listen</h1></div>
-  <p class="lead">Sentences from your tutor's sheets, one grammar point at a time. Read them, listen to them, and notice the highlighted endings. No questions.</p>
+  <p class="lead">Sentences from Valeria's lesson sheets, one grammar point at a time. Read them, listen to them, and notice the highlighted endings. No questions.</p>
   <div class="list">${POINTS.map(([k, t]) => row(k, t, true)).join('')}${row('all', 'All sentences')}</div>
   <p class="small muted" style="margin-top:14px">The sentences are copied from the sheets as they are. The highlighted words are found by a dictionary program (OpenCorpora), so a few forms may be left unmarked.</p>`;
 }
@@ -42,7 +42,7 @@ function point(main, { sentences, gloss }, tag) {
     return `<span class="w${on ? ' hl' : ''}" data-w="${esc(t.replace(/́/g, '').toLowerCase())}">${ruHtml(t)}</span>`;
   }).join('');
   main.innerHTML = `<a class="back" href="#/practice/input">← Read and listen</a><div class="top"><h1>${esc(name)}</h1></div>
-  <p class="lead">${es.length} sentences from your tutor's sheets. Tap a word for its meaning.</p>
+  <p class="lead">${es.length} sentences from Valeria's lesson sheets. Tap a word for its meaning.</p>
   <div class="in-bar"><button class="btn primary sm" id="all">${icon('sound')}Play all</button>
    <div class="seg sm" role="group" aria-label="Speed">${RATES.map(r => `<a href="#" data-r="${r}" ${r === rate() ? 'aria-selected="true"' : ''}>${r}×</a>`).join('')}</div></div>
   <div class="in-list">${order.map(e => `<div class="in-card${isRead(e) ? ' read' : ''}" data-id="${e.id}"><p class="ru in-ru">${sent(e)}</p>

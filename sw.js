@@ -1,5 +1,5 @@
 // Offline shell: network-first (always fresh when online), cache fallback when offline.
-const V = 'rr-v9';
+const V = 'rr-v11';
 const SHELL = ['./', 'index.html', 'css/app.css', 'manifest.webmanifest', 'assets/icon.svg',
   'js/app.js', 'js/router.js', 'js/ui.js', 'js/store.js', 'js/srs.js', 'js/tts.js', 'js/session.js', 'js/cue.js', 'js/today.js', 'js/grammar.js', 'js/words.js', 'js/practice.js', 'js/onboarding.js', 'js/tutor.js', 'js/vault.js', 'js/progress.js', 'js/input.js',
   'data/vocab.json', 'data/grammar.json', 'data/readings.json', 'data/freq.json', 'data/drills.json',

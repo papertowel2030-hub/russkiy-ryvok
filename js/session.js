@@ -198,7 +198,7 @@ export const stepDrill = (d, u, out) => async (el, ctx) => {
 
 /** A question from the tutor's sheet: answer aloud, reveal, mark honestly. */
 export const stepTutor = (item, sheet, tag) => async (el, ctx) => {
-  el.innerHTML = `<div class="task" style="text-align:left"><div class="kind">From your tutor · ${esc(sheet)}</div>
+  el.innerHTML = `<div class="task" style="text-align:left"><div class="kind">From Valeria · ${esc(sheet)}</div>
     ${item.prompt ? `<p class="muted small">${gloss(tidy(item.prompt))}</p>` : ''}<p class="prompt">${tidy(item.q)}</p>
     ${item.options?.length ? `<p class="muted">${item.options.map(o => ruHtml(o)).join(' / ')}</p>` : ''}
     <p class="muted small">Answer out loud first, then check.</p>
