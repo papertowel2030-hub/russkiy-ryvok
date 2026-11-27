@@ -11,6 +11,7 @@ const opened = stem => !!store.get().done['t:' + stem];
 
 export async function view(main, key, stem) {
   if (await locked()) return lockScreen(main, () => view(main, key, stem));
+  if (key === 'lexicon') return lexicon(main);
   const [idx, order] = await Promise.all([json('data/weeks/index.json'), recency()]);
   const newest = g => Math.max(-1, ...g.files.map(f => order[f.stem] ?? -1));
   if (!key) {
@@ -18,6 +19,8 @@ export async function view(main, key, stem) {
     main.innerHTML = `<div class="top"><h1>Valeria's lessons</h1></div>
     <p class="lead">Lesson sheets by Valeria, my Russian teacher, newest topic first. Answers stay hidden until you tap them.</p>
     <p class="small muted">All exercises, words, texts and pictures in this section are Valeria's work, used here with gratitude for personal study.</p>
+    <div class="list"><a class="item" href="#/tutor/lexicon"><span class="body"><span class="title">Lexical resources</span><span class="sub ru">Лексика</span></span><span class="meta">Word list</span><span class="chev">${icon('chev')}</span></a></div>
+    <div class="section">Lesson sheets</div>
     <div class="list">${shelves.map((g, i) => {
       const unseen = g.files.filter(f => !opened(f.stem)).length;
       return `<a class="item" href="#/tutor/${g.key}"><span class="body"><span class="title">${esc(g.en || g.label)}</span><span class="sub ru">${esc(g.label)}</span></span>
@@ -29,6 +32,30 @@ export async function view(main, key, stem) {
   const files = grp.files.slice().sort((a, b) => (order[b.stem] ?? -1) - (order[a.stem] ?? -1));
   main.innerHTML = `<a class="back" href="#/tutor">← Valeria's lessons</a><h1 style="margin-bottom:4px">${esc(grp.en || grp.label)}</h1><p class="ru muted" style="margin-bottom:20px">${esc(grp.label)}</p>`;
   for (const f of files) { const c = sheet(f, main); if (f.stem === stem) { c.open = true; requestAnimationFrame(() => c.scrollIntoView()); } main.append(c); }
+}
+
+/** Valeria's word list (tools/build_lexicon.py), kept under her own headings. */
+async function lexicon(main) {
+  const { groups } = await json('data/weeks/lexicon.json');
+  const total = groups.reduce((n, g) => n + g.words.length, 0);
+  main.innerHTML = `<a class="back" href="#/tutor">← Valeria's lessons</a><h1 style="margin-bottom:4px">Lexical resources</h1>
+  <p class="lead">Valeria's word list: ${total} entries. Tap one to hear it.</p>
+  <input class="input search" id="q" type="search" placeholder="Search in Russian or English" aria-label="Search words" style="font-family:var(--sans);font-size:1rem">
+  <div id="groups"></div>`;
+  const box = main.querySelector('#groups');
+  const plain = s => s.normalize('NFD').replace(/\u0301/g, '').normalize('NFC').toLowerCase().replace(/ё/g, 'е');
+  const render = q => {
+    box.innerHTML = groups.map(g => {
+      const ws = g.words.filter(w => !q || plain(w.ru).includes(q) || w.en.toLowerCase().includes(q));
+      return ws.length ? `<div class="section ru">${ruHtml(g.title)}</div><div class="list words">${ws.map(w => `<button class="word" style="flex-wrap:wrap;row-gap:2px" data-say="${esc(w.ru)}"><span class="ru" style="flex:0 1 auto">${ruHtml(w.ru)}</span><span class="en" style="flex:1 1 12em">${esc(w.en)}</span></button>`).join('')}</div>` : '';
+    }).join('') || '<p class="muted">No words found.</p>';
+  };
+  main.querySelector('#q').oninput = e => render(plain(e.target.value.trim()));
+  box.onclick = e => {
+    const b = e.target.closest('[data-say]');
+    if (b) say(b.dataset.say.replace(/\(.*?\)/g, '').replace(/\s[–—]\s/g, ', ').replace(/\u0301/g, ''));
+  };
+  render('');
 }
 
 function sheet(f, main) {
